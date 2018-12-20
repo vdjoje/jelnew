@@ -1,0 +1,17 @@
+span {
+  .homeStart {
+    background-color: red;
+    // position: relative;
+    .homeStart--test {
+      height: 1080px;
+      background-color: red;
+    }
+  }
+  #imgTest {
+    width: 1920px;
+    position: relative;
+    z-index: -2;
+    top: -20px;
+    left: 0px;
+  }
+}

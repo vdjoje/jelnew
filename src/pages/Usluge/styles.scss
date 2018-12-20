@@ -1,0 +1,193 @@
+span {
+  .usluge {
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    // trenutno
+    top: 1010px;
+  }
+  .usluge--one {
+    width: 298px;
+    height: 146px;
+    font-family: $Playful;
+    font-size: 200px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.8;
+    letter-spacing: 6px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    left: 70px;
+    top: 100px;
+  }
+
+  .usluge--two {
+    width: 149px;
+    height: 73px;
+    font-family: $Playful;
+    font-size: 100px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.8;
+    letter-spacing: 3px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    left: 46vw;
+    top: 400px;
+  }
+
+  .usluge--three {
+    width: 517px;
+    height: 535px;
+    font-family: $Playful;
+    font-size: 200px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.8;
+    letter-spacing: 6px;
+    text-align: left;
+    color: black;
+    position: absolute;
+    left: 1335px;
+    top: 395px;
+  }
+
+  .usluge--naslov {
+    width: 700px;
+    height: 41px;
+    font-family: $Playful;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.88;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    left: 308px;
+    top: 998px;
+  }
+
+  .usluge--nav {
+    width: 600px;
+    height: 25px;
+    font-family: $Playful;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.3;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: black;
+    position: absolute;
+    left: 215px;
+    top: 1098px;
+    list-style-type: none;
+    counter-reset: item;
+    padding-left: 0px;
+  }
+  & li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: $gold;
+  }
+
+  .usluge--naslovtwo {
+    width: 580px;
+    height: 195px;
+    font-family: $Playful;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    left: 215px;
+    top: 2100px;
+  }
+
+  .usluge--podnas {
+    width: 500px;
+    height: 140px;
+    font-family: $Playful;
+    font-size: 35px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    left: 1050px;
+    top: 1700px;
+  }
+
+  .usluge--navtwo {
+    min-width: 500px;
+    font-family: $Montserat;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    left: 1050px;
+    top: 1980px;
+  }
+  & li {
+    list-style: none;
+  }
+  & li::before {
+    color: $gold;
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  & p {
+    // padding-top: 8%;
+    width: 500px;
+    height: 14px;
+    font-family: $Montserat;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0;
+    letter-spacing: 0.6px;
+    text-align: Left;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  span {
+    .usluge {
+      //trenutno
+      top: calc(768px+700px);
+    }
+    .usluge--one {
+      font-size: 100px;
+    }
+    .usluge--two {
+      left: 640px;
+      top: 300px;
+    }
+  }
+}

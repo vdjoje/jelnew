@@ -1,0 +1,260 @@
+span {
+  .line {
+    width: 100%;
+    height: 0;
+    border: 1px solid $gold;
+    z-index: -1;
+  }
+  .backDiv {
+    @include flex(row, left);
+    .backDiv--lbgold {
+      width: 0;
+      height: 0;
+      border-bottom: 1100px solid $gold;
+      border-right: 1920px solid transparent;
+      position: absolute;
+      z-index: -1;
+      top: -90px;
+    }
+    .backDiv--lb {
+      width: 0;
+      height: 0;
+      border-bottom: 1010px solid black;
+      border-right: 1920px solid transparent;
+      z-index: -1;
+    }
+    .backDiv--lt {
+      width: 0;
+      height: 0;
+      border-top: 1104px solid black;
+      border-right: 1920px solid transparent;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .backDiv--ltgold {
+      width: 0;
+      height: 0;
+      border-top: 1154px solid $gold;
+      border-right: 1920px solid transparent;
+      z-index: -1;
+    }
+    .backDiv--rb {
+      width: 0;
+      height: 0;
+      border-bottom: 1010px solid black;
+      border-left: 1920px solid transparent;
+      position: relative;
+      z-index: -1;
+      padding-bottom: 50px;
+    }
+
+    .backDiv--rbgold {
+      width: 0;
+      height: 0;
+      border-bottom: 1060px solid $gold;
+      border-left: 1920px solid transparent;
+      position: absolute;
+      z-index: -1;
+    }
+    .backDiv--rt {
+      width: 0;
+      height: 0;
+      border-top: 1010px solid black;
+      border-left: 1920px solid transparent;
+      z-index: -1;
+    }
+
+    .backDiv--rtgold {
+      width: 0;
+      height: 0;
+      border-top: 1060px solid $gold;
+      border-left: 1920px solid transparent;
+      position: absolute;
+      z-index: -1;
+    }
+    .backDiv--para {
+      margin-top: 530px;
+      width: 1920px;
+      height: 2185px;
+      transform: skew(0deg, 30deg);
+      background: black;
+      z-index: -1;
+    }
+
+    .backDiv--paragold {
+      margin-top: 530px;
+      width: 1920px;
+      height: 2200px;
+      transform: skew(0deg, 30deg);
+      background: $gold;
+      z-index: -1;
+      position: absolute;
+    }
+  }
+  .lastDiv {
+    position: relative;
+    .lastDiv--last {
+      width: 0;
+      height: 0;
+      border-bottom: 197px solid black;
+      border-right: 342px solid transparent;
+      position: absolute;
+      top: 700px;
+      z-index: -1;
+    }
+
+    .lastDiv--lastgold {
+      width: 0;
+      height: 0;
+      border-bottom: 227px solid $gold;
+      border-right: 342px solid transparent;
+      position: absolute;
+      top: 670px;
+      z-index: -1;
+    }
+  }
+}
+
+// }
+// @media only screen and (max-width: 1366px) {
+//   .backDiv {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: left;
+//   }
+
+//   .triangleLeftBottom {
+//     border-bottom: 693px solid black;
+//     border-right: 1366px solid transparent;
+//   }
+
+//   .triangleLeftBottomPink {
+//     border-bottom: 783px solid rgba(173, 152, 94, 0.7);
+//     border-right: 1366px solid transparent;
+//   }
+
+//   .triangleLeftTop {
+//     border-top: 768px solid black;
+//     border-right: 1366px solid transparent;
+//   }
+
+//   .triangleLeftTopPink {
+//     border-top: 808px solid #ad985e;
+//     border-right: 1366px solid transparent;
+//   }
+
+//   .triangleRightBottom {
+//     border-bottom: 768px solid black;
+//     border-left: 1366px solid transparent;
+//   }
+
+//   .triangleRightBottomPink {
+//     border-bottom: 818px solid #ad985e;
+//     border-left: 1366px solid transparent;
+//   }
+
+//   .lastTriangle {
+//     top: 276px;
+//   }
+//   .lastTrianglePink {
+//     top: 473px;
+//   }
+// }
+
+// @media only screen and (max-width: 1280px) {
+//   .backDiv {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: left;
+//   }
+//   .triangleLeftBottom {
+//     border-bottom: 710px solid black;
+//     border-right: 1280px solid transparent;
+//   }
+//   .triangleLeftBottomPink {
+//     border-bottom: 800px solid rgba(173, 152, 94, 0.7);
+//     border-right: 1280px solid transparent;
+//     top: -90px;
+//   }
+//   .triangleLeftTop {
+//     border-top: 710px solid black;
+//     border-right: 1280px solid transparent;
+//     z-index: 1;
+//   }
+//   .triangleLeftTopPink {
+//     border-top: 760px solid #ad985e;
+//     border-right: 1280px solid transparent;
+//     z-index: 1;
+//   }
+//   .triangleRightBottom {
+//     border-bottom: 710px solid black;
+//     border-left: 1280px solid transparent;
+//   }
+//   .triangleRightBottomPink {
+//     border-bottom: 760px solid #ad985e;
+//     border-left: 1280px solid transparent;
+//   }
+//   .triangleRightTop {
+//     border-top: 710px solid black;
+//     border-left: 1280px solid transparent;
+//   }
+//   .triangleRightTopPink {
+//     border-top: 760px solid #ad985e;
+//     border-left: 1280px solid transparent;
+//   }
+//   .parallelogram {
+//     width: 1280px;
+//     height: 1366px;
+//   }
+//   .parallelogramPink {
+//     width: 1280px;
+//     height: 1380px;
+//   }
+// }
+
+// @media only screen and (max-width: 800px) {
+//   .triangleLeftBottom {
+//     border-bottom: 710px solid black;
+//     border-right: 800px solid transparent;
+//   }
+//   .triangleLeftBottomPink {
+//     border-bottom: 800px solid rgba(173, 152, 94, 0.7);
+//     border-right: 800px solid transparent;
+//     top: -90px;
+//   }
+//   .triangleLeftTop {
+//     border-top: 710px solid black;
+//     border-right: 800px solid transparent;
+//     z-index: 1;
+//   }
+//   .triangleLeftTopPink {
+//     border-top: 760px solid #ad985e;
+//     border-right: 800px solid transparent;
+//     z-index: 1;
+//   }
+//   .triangleRightBottom {
+//     border-bottom: 710px solid black;
+//     border-left: 800px solid transparent;
+//   }
+//   .triangleRightBottomPink {
+//     border-bottom: 760px solid #ad985e;
+//     border-left: 800px solid transparent;
+//   }
+//   .triangleRightTop {
+//     border-top: 710px solid black;
+//     border-left: 800px solid transparent;
+//   }
+//   .triangleRightTopPink {
+//     border-top: 760px solid #ad985e;
+//     border-left: 800px solid transparent;
+//   }
+//   .parallelogram {
+//     width: 800px;
+//     height: 1200px;
+//   }
+//   .parallelogramPink {
+//     width: 800px;
+//     height: 1210px;
+//   }
+// }

@@ -1,0 +1,66 @@
+span {
+  .kontakt {
+    z-index: 99;
+    position: relative;
+    width: 1920px;
+    // height: 240px;
+    top: 7200px;
+    // padding-bottom: 910px;
+  }
+  .kontakt--naslov {
+    font-family: $Playful;
+    font-size: 200px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.9;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    // top: 130px;
+    left: 70px;
+  }
+  .kontakt--ime {
+    width: 403px;
+    font-family: $Playful;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+    top: 347px;
+    left: 215px;
+    padding: 0px;
+    margin-right: 0px;
+  }
+  .kontakt--ime p {
+    // margin: 0%;
+    font-size: 25px;
+  }
+  .kontakt--ime p::first-letter {
+    color: $gold;
+  }
+  .kontakt--info {
+    font-family: $Playful;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    position: relative;
+    top: 220px;
+    left: 747px;
+  }
+  & a {
+    color: $gold;
+  }
+  & a:hover {
+    color: black;
+  }
+}

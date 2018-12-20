@@ -1,0 +1,152 @@
+header {
+  height: 70px;
+  @include flex(row, center, center);
+  .header--submenu {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background: black;
+  }
+  .header--container {
+    width: 60%;
+    @include flex(row, space-between, center);
+    nav {
+      font-family: $Playful;
+      a {
+        user-select: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        i {
+          width: 10px;
+          height: 10px;
+          svg {
+            fill: $gold;
+            width: inherit;
+            height: inherit;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        margin-right: 60px;
+      }
+    }
+  }
+}
+
+// .menuStyle {
+//   height: 70px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   position: fixed;
+//   width: 100vw;
+//   top: 0;
+//   background-color: black;
+//   z-index: 100;
+//   border-radius: 0;
+//   border-bottom: 1px #ad985e solid;
+//   transition: 0.5s;
+// }
+
+// #menuMenu {
+//   align-self: center;
+// }
+
+// #menuItem {
+//   font-family: Butler;
+//   letter-spacing: 0.5px;
+//   font-size: 16px;
+//   color: white;
+// }
+
+// #menuItem ::first-letter {
+//   color: #ad985e;
+// }
+
+// #menuItem:hover {
+//   color: #f7eccd;
+// }
+
+// #logoTop {
+//   margin-left: 9%;
+//   margin-right: 9%;
+//   align-self: center;
+//   z-index: 100;
+//   cursor: pointer;
+// }
+
+// .sidenav {
+//   height: 0;
+//   width: 50vw;
+//   position: fixed;
+//   z-index: 1;
+//   top: 70px;
+//   left: 0;
+//   background-color: black;
+//   overflow-x: hidden;
+//   transition: 0.5s;
+//   text-transform: capitalize;
+// }
+
+// .sidenav a {
+//   padding: 40px 8px 8px 8px;
+//   text-decoration: none;
+//   letter-spacing: 0.5px;
+//   font-family: Butler;
+//   font-size: 20px;
+//   color: #ad985e;
+//   display: block;
+//   transition: 0.3s;
+//   align-self: center;
+// }
+
+// .sidenav a:hover {
+//   color: white;
+// }
+
+// .sidenav a::first-letter {
+//   color: white;
+// }
+
+// .sidenav .closebtn {
+//   padding: 8px 8px 8px 8px;
+//   position: absolute;
+//   top: 0;
+//   right: 25px;
+//   font-size: 36px;
+//   margin-left: 50px;
+//   color: #ad985e;
+// }
+
+// .sideOptions {
+//   text-align: right;
+//   padding-right: 5%;
+//   padding-top: 5%;
+//   /* width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start; */
+// }
+
+// .sideOptions a {
+//   padding: 8px;
+// }
+
+// @media only screen and (max-width: 1280px) {
+//   .menuStyle {
+//     width: 1280px;
+//   }
+// }
+
+// @media only screen and (max-width: 800px) {
+//   .menuStyle {
+//     width: 800px;
+//   }
+// }

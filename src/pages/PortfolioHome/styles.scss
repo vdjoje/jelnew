@@ -1,0 +1,42 @@
+span {
+  position: absolute;
+  .portfolioHome {
+    @include flex(row, space-between);
+    // position: relative;
+    top: 3838px;
+    left: 0px;
+    width: 100vw;
+    height: 721px;
+    background-color: white;
+    border-top: 2px solid $gold;
+    border-bottom: 2px solid $gold;
+  }
+  .portfolioHome--card {
+    width: 24%;
+    margin: 2%;
+    border-left: 2px solid $gold;
+    padding-left: 2%;
+  }
+  & h3 {
+    font-family: $Playful;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  & h3::first-letter {
+    color: $gold;
+  }
+  & p {
+    font-family: $Montserat;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: black;
+    font-size: 18px;
+    line-height: 1.94;
+    letter-spacing: 0.5px;
+    width: 100%;
+  }
+}

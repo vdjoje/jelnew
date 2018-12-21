@@ -23,7 +23,7 @@ span {
   .omeni--one {
     width: 735px;
     height: auto;
-    font-family: $Playful;
+    font-family: $Montserat;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -38,17 +38,10 @@ span {
     border-left: 2px solid $gold;
     padding-left: 30px;
   }
-  //   & p::first-letter {
-  //     font-size: 50px;
-  //     font-weight: bold;
-  //     letter-spacing: 1.5px;
-  //     line-height: 1;
-  //     color: $gold;
-  //   }
   .omeni--two {
     width: 735px;
     height: auto;
-    font-family: $Playful;
+    font-family: $Montserat;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -66,7 +59,7 @@ span {
   .omeni--three {
     width: 735px;
     height: auto;
-    font-family: $Playful;
+    font-family: $Montserat;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -84,7 +77,7 @@ span {
   .omeni--four {
     width: 735px;
     height: auto;
-    font-family: $Playful;
+    font-family: $Montserat;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -99,28 +92,11 @@ span {
     border-left: 2px solid $gold;
     padding-left: 30px;
   }
+  .omeni--one::first-letter, .omeni--two::first-letter, .omeni--three::first-letter, .omeni--four::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: $gold;
+    }
 }
-
-//   .drugiParagraf::first-letter {
-//     font-size: 50px;
-//     font-weight: bold;
-//     letter-spacing: 1.5px;
-//     line-height: 1;
-//     color: #ad985e;
-//   }
-
-//   .treciParagraf::first-letter {
-//     font-size: 50px;
-//     font-weight: bold;
-//     letter-spacing: 1.5px;
-//     line-height: 1;
-//     color: #ad985e;
-//   }
-
-//   .cetvrtiParagraf::first-letter {
-//     font-size: 50px;
-//     font-weight: bold;
-//     letter-spacing: 1.5px;
-//     line-height: 1;
-//     color: #ad985e;
-//   }

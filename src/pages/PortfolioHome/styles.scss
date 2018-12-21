@@ -17,7 +17,7 @@ span {
     border-left: 2px solid $gold;
     padding-left: 2%;
   }
-  & h3 {
+  .portfolioHome--card h3 {
     font-family: $Playful;
     font-size: 25px;
     font-weight: 500;
@@ -25,10 +25,10 @@ span {
     letter-spacing: 0.8px;
     text-transform: uppercase;
   }
-  & h3::first-letter {
+  .portfolioHome--card h3::first-letter {
     color: $gold;
   }
-  & p {
+  .portfolioHome--card p {
     font-family: $Montserat;
     font-weight: normal;
     font-style: normal;

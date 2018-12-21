@@ -1,35 +1,35 @@
-.headings {
-  @include flex(row, space-between, center);
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   align-items: center;
-  h1 {
-    color: $mojaboja;
-  }
-  p {
-    width: 200px;
-  }
-}
+// .headings {
+//   @include flex(row, space-between, center);
+//   //   display: flex;
+//   //   flex-direction: row;
+//   //   justify-content: space-between;
+//   //   align-items: center;
+//   h1 {
+//     color: $mojaboja;
+//   }
+//   p {
+//     width: 200px;
+//   }
+// }
 
-.nasaklasa {
-  @include flex(row, space-around, center);
-  // background: url("../images/logo.svg");
-  background-repeat: no-repeat;
-  svg {
-    height: 400px;
-    // fill: red;
-  }
-  .jedan {
-    width: 300px;
-    background: hotpink;
-    transition: background-color 0.1s linear;
-    &:hover {
-      background: blue;
-    }
-  }
-  .dva {
-    background: green;
-    width: 200px;
-  }
-}
+// .nasaklasa {
+//   @include flex(row, space-around, center);
+//   // background: url("../images/logo.svg");
+//   background-repeat: no-repeat;
+//   svg {
+//     height: 400px;
+//     // fill: red;
+//   }
+//   .jedan {
+//     width: 300px;
+//     background: hotpink;
+//     transition: background-color 0.1s linear;
+//     &:hover {
+//       background: blue;
+//     }
+//   }
+//   .dva {
+//     background: green;
+//     width: 200px;
+//   }
+// }

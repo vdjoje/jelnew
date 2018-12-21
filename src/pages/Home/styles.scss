@@ -1,17 +1,40 @@
 span {
-  .homeStart {
-    background-color: red;
-    // position: relative;
-    .homeStart--test {
-      height: 1080px;
-      background-color: red;
+    #homeStart--image {
+      position: relative;
+      z-index: -2;
+      top: -90px;
+      left: 0px;
+      height: 50%;
     }
-  }
-  #imgTest {
-    width: 1920px;
-    position: relative;
-    z-index: -2;
-    top: -20px;
-    left: 0px;
-  }
+    #homeStart--small {
+      z-index: -3;
+      top: 3400px;
+      width: 1400px;
+      float: right;
+    }    
+    .homeStart--naslov {
+      position: absolute;
+      margin: 3%;
+      color: white;
+      font-family: $Playful;
+      font-size: 60px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      top: 200px;
+      left: 100px;
+      width: 40vh;
+    }
+      .homeStart--naslov p {
+        color: white;
+      }
+      .homeStart--naslov h3 {
+        margin-top: 100px;
+        font-family: $Montserat;
+        color: white;
+        width: 80vw;
+      }
+    
+   
 }

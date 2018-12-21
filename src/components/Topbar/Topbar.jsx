@@ -2,21 +2,22 @@ import React, { Component } from "react";
 import { Menu, Image } from "semantic-ui-react";
 import logo from "../../logo.svg";
 // import { Link } from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import InlineSVG from "svg-inline-react";
 import { arrowDown } from "../../assets/svg";
-// let prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   let currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-70px";
-//     document.getElementById("mySidenav").style.height = "0";
-//     document.getElementById("mySidenav").style.borderBottom = "0px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
+    // document.getElementById("mySidenav").style.height = "0";
+    // document.getElementById("mySidenav").style.borderBottom = "0px";
+  }
+  prevScrollpos = currentScrollPos;
+};
 
 export default class Topbar extends Component {
   constructor() {
@@ -52,20 +53,26 @@ export default class Topbar extends Component {
 
   render() {
     return (
-      <header>
+      <header id="navbar">
         <div className="header--container">
           <nav>
-            <Link to="#">Usluge</Link>
-            <Link to="#" onClick={this.openNav}>
+            <Link to="usluge" spy={true} smooth={true} duration={500}>
+              Usluge
+            </Link>
+            <a onClick={this.openNav}>
               Portfolio
               <InlineSVG src={arrowDown} />
-            </Link>
+            </a>
           </nav>
-          <div className="logo">logo</div>
+          <div className="header--logo">logo</div>
 
           <nav>
-            <Link to="#">O meni</Link>
-            <Link to="#">Kontakt</Link>
+            <Link to="omeni" spy={true} smooth={true} duration={500}>
+              O meni
+            </Link>
+            <Link to="kontakt" spy={true} smooth={true} duration={500}>
+              Kontakt
+            </Link>
           </nav>
         </div>
         {this.state.submenuVisible ? (

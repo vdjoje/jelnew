@@ -12,7 +12,7 @@ const Kontakt = () => {
       </Element>
       <div className="kontakt--ime">
         <p>jelena</p>
-        <p>miskovic</p>
+        <p>mišković</p>
       </div>
       <div className="kontakt--info">
         <a href="tel:382-67-254-844">+382 67 / 254 - 844</a>
@@ -20,7 +20,7 @@ const Kontakt = () => {
         <br />
         <br />
         <a
-          className="email"
+          className="kontakt--email"
           title="My email"
           href="mailto:arhmiskovic@gmail.com"
         >
@@ -28,14 +28,14 @@ const Kontakt = () => {
         </a>
         <div style={{ marginTop: "50px" }}>
           <Button
-            id="faceDugme"
+            id="kontakt--face"
             href="https://www.facebook.com/jelena.miskovic.50"
             target="_blank"
           >
             <Icon size="big" name="facebook f" />
           </Button>
           <Button
-            id="instaDugme"
+            id="kontakt--insta"
             href="https://www.instagram.com/ena_jel/"
             target="_blank"
           >
@@ -44,7 +44,7 @@ const Kontakt = () => {
         </div>
       </div>
       <Image
-        id="logoMj"
+        id="kontakt--logo"
         src={logo}
         size="small"
         as={Link}
@@ -53,9 +53,9 @@ const Kontakt = () => {
         duration={500}
         to="home"
       />
-      <div id="copy">Copyright by Jelena Mišković </div>
-      <p id="copyRight">Developed by</p>
-      <Image id="copyLogo" href="https://uon.rs/" target="_blank" src={uon2x} />
+      <div id="kontakt--copy">Copyright by Jelena Mišković </div>
+      <p id="kontakt--devby">Developed by</p>
+      <Image id="kontakt--uon" href="https://uon.rs/" target="_blank" src={uon2x} />
     </span>
   );
 };

@@ -148,10 +148,10 @@ span {
     left: 1050px;
     top: 1980px;
   }
-  & li {
+  .usluge--navtwo li {
     list-style: none;
   }
-  & li::before {
+  .usluge--navtwo li::before {
     color: $gold;
     content: "\2022";
     font-weight: bold;
@@ -159,7 +159,7 @@ span {
     width: 1em;
     margin-left: -1em;
   }
-  & p {
+  .usluge--navtwo p {
     // padding-top: 8%;
     width: 500px;
     height: 14px;

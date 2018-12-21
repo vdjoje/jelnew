@@ -30,3 +30,8 @@
     transform: rotate(360deg);
   }
 }
+
+/*no scrollbar*/
+::-webkit-scrollbar {
+  display: none;
+}

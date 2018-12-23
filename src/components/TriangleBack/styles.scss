@@ -117,8 +117,14 @@ span {
   }
 }
 
-// }
-// @media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {
+  .backDiv--lbgold {
+        border-bottom: 693px solid black;
+        border-right: 1366px solid transparent;
+      }
+}
+
+
 //   .backDiv {
 //     display: flex;
 //     flex-direction: row;

@@ -75,14 +75,13 @@ span {
       z-index: -1;
     }
     .backDiv--para {
-      margin-top: 530px;
+      margin-top: 535px;
       width: 1920px;
       height: 2185px;
       transform: skew(0deg, 30deg);
       background: black;
       z-index: -1;
     }
-
     .backDiv--paragold {
       margin-top: 530px;
       width: 1920px;
@@ -118,58 +117,64 @@ span {
 }
 
 @media only screen and (max-width: 1366px) {
-  .backDiv--lbgold {
-        border-bottom: 693px solid black;
+  span {
+    .backDiv {
+      .backDiv--lbgold {
+        border-bottom: 860px solid $gold;
         border-right: 1366px solid transparent;
       }
+      .backDiv--lb {
+        border-bottom: 768px solid black;
+        border-right: 1366px solid transparent;
+      }
+      .backDiv--lt {
+        border-top: 768px solid black;
+        border-right: 1366px solid transparent;
+      }
+      .backDiv--ltgold {
+        border-top: 808px solid $gold;
+        border-right: 1366px solid transparent;
+      }
+      .backDiv--rb {
+        border-bottom: 768px solid black;
+        border-left: 1366px solid transparent;
+      }
+      .backDiv--rbgold {
+        border-bottom: 818px solid $gold;
+        border-left: 1366px solid transparent;
+      }
+      .backDiv--rt {
+        border-top: 768px solid black;
+        border-left: 1366px solid transparent;
+      }
+      .backDiv--rtgold {
+        border-top: 808px solid $gold;
+        border-left: 1366px solid transparent;
+      }
+      .backDiv--para {
+        margin-top: 535px;
+        width: 1366px;
+        height: 1885px;
+      }
+      .backDiv--paragold {
+        width: 1366px;
+        height: 1900px;
+      }
+    }
+    .lastDiv {
+      .lastDiv--last {
+        top: 476px;
+      }
+      .lastDiv--lastgold {
+        top: 446px;
+      }
+    }
+  }
 }
 
+@media only screen and (max-width: 1280px) {
+}
 
-//   .backDiv {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: left;
-//   }
-
-//   .triangleLeftBottom {
-//     border-bottom: 693px solid black;
-//     border-right: 1366px solid transparent;
-//   }
-
-//   .triangleLeftBottomPink {
-//     border-bottom: 783px solid rgba(173, 152, 94, 0.7);
-//     border-right: 1366px solid transparent;
-//   }
-
-//   .triangleLeftTop {
-//     border-top: 768px solid black;
-//     border-right: 1366px solid transparent;
-//   }
-
-//   .triangleLeftTopPink {
-//     border-top: 808px solid #ad985e;
-//     border-right: 1366px solid transparent;
-//   }
-
-//   .triangleRightBottom {
-//     border-bottom: 768px solid black;
-//     border-left: 1366px solid transparent;
-//   }
-
-//   .triangleRightBottomPink {
-//     border-bottom: 818px solid #ad985e;
-//     border-left: 1366px solid transparent;
-//   }
-
-//   .lastTriangle {
-//     top: 276px;
-//   }
-//   .lastTrianglePink {
-//     top: 473px;
-//   }
-// }
-
-// @media only screen and (max-width: 1280px) {
 //   .backDiv {
 //     display: flex;
 //     flex-direction: row;

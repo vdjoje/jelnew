@@ -64,8 +64,19 @@ export default class Topbar extends Component {
               <InlineSVG src={arrowDown} />
             </a>
           </nav>
-          <div className="header--logo">logo</div>
-
+          <Image
+            // ui="true"
+            src={logo}
+            id="header--logo"
+            // className="App-logo"
+            alt="logo"
+            size="small"
+            as={Link}
+            spy={true}
+            smooth={true}
+            duration={500}
+            to="home"
+          />
           <nav>
             <Link to="omeni" spy={true} smooth={true} duration={500}>
               O meni

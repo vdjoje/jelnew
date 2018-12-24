@@ -3,7 +3,6 @@ span {
     height: 100vh;
     position: absolute;
     z-index: 1;
-    // trenutno
     top: 1010px;
   }
   .usluge--one {
@@ -92,11 +91,11 @@ span {
     list-style-type: none;
     counter-reset: item;
     padding-left: 0px;
-  }
-  & li:before {
-    content: counter(item) ". ";
-    counter-increment: item;
-    color: $gold;
+    & li:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      color: $gold;
+    }
   }
 
   .usluge--naslovtwo {
@@ -147,47 +146,199 @@ span {
     position: absolute;
     left: 1050px;
     top: 1980px;
-  }
-  .usluge--navtwo li {
-    list-style: none;
-  }
-  .usluge--navtwo li::before {
-    color: $gold;
-    content: "\2022";
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-  .usluge--navtwo p {
-    // padding-top: 8%;
-    width: 500px;
-    height: 14px;
-    font-family: $Montserat;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0;
-    letter-spacing: 0.6px;
-    text-align: Left;
-    color: white;
-    text-transform: uppercase;
+    & li {
+      font-size: 30px;
+      list-style: none;
+    }
+    & li::before {
+      color: $gold;
+      content: "\2022";
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    & p {
+      width: 500px;
+      height: 14px;
+      font-family: $Montserat;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0;
+      letter-spacing: 0.6px;
+      text-align: Left;
+      color: white;
+      text-transform: uppercase;
+    }
   }
 }
 
 @media only screen and (max-width: 1366px) {
   span {
     .usluge {
-      //trenutno
-      top: calc(768px+700px);
+      top: 700px;
     }
     .usluge--one {
       font-size: 100px;
     }
     .usluge--two {
       left: 640px;
-      top: 300px;
+      top: 280px;
+    }
+    .usluge--three {
+      width: 300px;
+      font-size: 80px;
+      left: 80vw;
+      top: 450px;
+    }
+    .usluge--naslov {
+      top: 720px;
+      font-size: 30px;
+    }
+    .usluge--nav {
+      top: 800px;
+      left: 15vw;
+      font-size: 20px;
+    }
+    .usluge--naslovtwo {
+      font-size: 25px;
+      left: 15vw;
+      top: 1600px;
+      width: 400px;
+    }
+    .usluge--podnas {
+      font-size: 30px;
+      left: 60vw;
+      top: 1300px;
+    }
+    .usluge--navtwo {
+      min-width: 500px;
+      font-family: Montserrat;
+      font-size: 25px;
+      left: 60vw;
+      top: 1500px;
+      & p {
+        font-size: 18px;
+      }
+      & li {
+        font-size: 20px;
+      }
     }
   }
 }
+
+// @media only screen and (max-width: 1280px) {
+//   .uslugeStart {
+//     top: 820px;
+//   }
+
+//   .testt {
+//     font-size: 50px;
+//     top: 100px;
+//   }
+
+//   .testDva {
+//     font-size: 50px;
+//     left: 49vw;
+//     top: 230px;
+//   }
+
+//   .desno {
+//     width: 250px;
+//     font-size: 50px;
+//     left: 80vw;
+//     top: 400px;
+//   }
+
+//   .maliNaslov {
+//     font-size: 25px;
+//     left: 20vw;
+//     top: 600px;
+//   }
+
+//   .navodjenje {
+//     font-size: 20px;
+//     top: 650px;
+//     left: 10vw;
+//   }
+
+//   .drugiNaslov {
+//     font-size: 25px;
+//     left: 15vw;
+//     top: 1410px;
+//     width: 400px;
+//   }
+
+//   .podnaslov {
+//     font-size: 25px;
+//     left: 55vw;
+//     top: 1255px;
+//   }
+
+//   .podnaslovNabrajanje {
+//     font-size: 20px;
+//     left: 55vw;
+//     top: 1300px;
+//   }
+// }
+
+// @media only screen and (max-width: 800px) {
+//   .testt {
+//     font-size: 40px;
+//     top: 80px;
+//   }
+
+//   .testDva {
+//     font-size: 40px;
+//     left: 49vw;
+//     top: 200px;
+//   }
+
+//   .desno {
+//     width: 150px;
+//     font-size: 40px;
+//     left: 80vw;
+//     top: 300px;
+//   }
+
+//   .maliNaslov {
+//     font-size: 20px;
+//     left: 15vw;
+//     top: 600px;
+//   }
+
+//   .navodjenje {
+//     font-size: 15px;
+//     top: 650px;
+//     left: 10vw;
+//   }
+
+//   .drugiNaslov {
+//     font-size: 15px;
+//     left: 10vw;
+//     top: 1460px;
+//     width: 250px;
+//   }
+
+//   .podnaslov {
+//     font-size: 15px;
+//     left: 45vw;
+//     top: 1255px;
+//   }
+
+//   .podnaslovNabrajanje {
+//     font-size: 12px;
+//     left: 50vw;
+//     top: 1300px;
+//   }
+
+//   .podnaslovNabrajanje p {
+//     font-size: 15px;
+//   }
+
+//   .podnaslovNabrajanje li {
+//     width: 300px;
+//   }
+// }

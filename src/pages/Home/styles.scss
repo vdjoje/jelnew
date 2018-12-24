@@ -1,40 +1,93 @@
 span {
+  #homeStart--image {
+    position: relative;
+    z-index: -2;
+    top: -90px;
+    left: 0px;
+    height: 50%;
+  }
+  #homeStart--small {
+    z-index: -3;
+    top: 3400px;
+    width: 1400px;
+    float: right;
+  }
+  .homeStart--naslov {
+    position: absolute;
+    margin: 3%;
+    color: white;
+    font-family: $Playful;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    top: 200px;
+    left: 100px;
+    width: 40vh;
+    & p {
+      color: white;
+    }
+    & h3 {
+      margin-top: 100px;
+      font-family: $Montserat;
+      color: white;
+      width: 80vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  span {
+    .homeStart--naslov {
+      top: 240px;
+      left: 5vw;
+      font-size: 40px;
+    }
     #homeStart--image {
-      position: relative;
-      z-index: -2;
-      top: -90px;
-      left: 0px;
-      height: 50%;
+      width: 1366px;
+      top: -14px;
     }
     #homeStart--small {
-      z-index: -3;
-      top: 3400px;
-      width: 1400px;
-      float: right;
-    }    
-    .homeStart--naslov {
-      position: absolute;
-      margin: 3%;
-      color: white;
-      font-family: $Playful;
-      font-size: 60px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.43;
-      top: 200px;
-      left: 100px;
-      width: 40vh;
+      top: 2900px;
+      width: 1150px;
     }
-      .homeStart--naslov p {
-        color: white;
-      }
-      .homeStart--naslov h3 {
-        margin-top: 100px;
-        font-family: $Montserat;
-        color: white;
-        width: 80vw;
-      }
-    
-   
+  }
 }
+
+// @media only screen and (max-width: 1280px) {
+//   .homeTxt {
+//     font-size: 40px;
+//     top: 270px;
+//     left: 100px;
+//     width: 40vh;
+//   }
+
+//   .back {
+//     height: 800px;
+//   }
+
+//   #imgTest {
+//     width: 100%;
+//     height: 800px;
+//   }
+
+//   #imgSmall {
+//     top: 1900px;
+//     width: 1050px;
+//   }
+// }
+
+// @media only screen and (max-width: 800px) {
+//   .homeTxt {
+//     font-size: 30px;
+//     top: 350px;
+//     left: 5vw;
+//     width: 20vw;
+//   }
+
+//   #imgSmall {
+//     top: 2000px;
+//     width: 650px;
+//   }
+// }

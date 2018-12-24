@@ -121,3 +121,105 @@ span {
     }
   }
 }
+
+@media only screen and (max-width: 1366px) {
+  span {
+    .omeni {
+      top: 3800px;
+    }
+    .omeni--naslov {
+      left: 70px;
+      width: 768px;
+      height: 146px;
+      font-size: 100px;
+    }
+    .omeni--one {
+      width: 600px;
+      font-size: 18px;
+      left: 5vw;
+      top: 250px;
+    }
+    .omeni--two {
+      width: 600px;
+      font-size: 18px;
+      left: 55vw;
+      top: 650px;
+    }
+    .omeni--three {
+      width: 600px;
+      font-size: 18px;
+      left: 5vw;
+      top: 1100px;
+    }
+    .omeni--four {
+      width: 600px;
+      font-size: 18px;
+      left: 55vw;
+      top: 1550px;
+    }
+  }
+}
+
+// @media only screen and (max-width: 1280px) {
+//   .omeniOsnovno {
+//     top: 3400px; }
+//   .naslovTri {
+//     left: 70px;
+//     width: 768px;
+//     height: 146px;
+//     font-size: 50px; }
+//   .prviParagraf {
+//     width: 400px;
+//     height: 300px;
+//     font-size: 15px;
+//     left: 5vw;
+//     top: 100px; }
+//   .drugiParagraf {
+//     width: 400px;
+//     height: 315px;
+//     font-size: 15px;
+//     left: 55vw;
+//     top: 450px; }
+//   .treciParagraf {
+//     width: 400px;
+//     height: 345px;
+//     font-size: 15px;
+//     left: 5vw;
+//     top: 800px; }
+//   .cetvrtiParagraf {
+//     width: 400px;
+//     height: 300px;
+//     font-size: 15px;
+//     left: 55vw;
+//     top: 1200px; } }
+
+// @media only screen and (max-width: 800px) {
+//   .omeniOsnovno {
+//     top: 3450px; }
+//   .naslovTri {
+//     left: 5vw;
+//     font-size: 40px; }
+//   .prviParagraf {
+//     width: 350px;
+//     height: 225px;
+//     font-size: 12px;
+//     left: 5vw;
+//     top: 100px; }
+//   .drugiParagraf {
+//     width: 350px;
+//     height: 245px;
+//     font-size: 12px;
+//     left: 50vw;
+//     top: 370px; }
+//   .treciParagraf {
+//     width: 350px;
+//     height: 260px;
+//     font-size: 12px;
+//     left: 5vw;
+//     top: 650px; }
+//   .cetvrtiParagraf {
+//     width: 350px;
+//     height: 250px;
+//     font-size: 12px;
+//     left: 50vw;
+//     top: 950px; } }

@@ -125,7 +125,7 @@ span {
 @media only screen and (max-width: 1366px) {
   span {
     .omeni {
-      top: 3800px;
+      top: 3600px;
     }
     .omeni--naslov {
       left: 70px;
@@ -160,38 +160,56 @@ span {
   }
 }
 
-// @media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
+  span {
+    .omeni {
+      top: 3400px;
+    }
+    .omeni--naslov {
+      left: 70px;
+      width: 768px;
+      font-size: 50px;
+    }
+    .omeni--one {
+      width: 400px;
+      font-size: 14px;
+      left: 5vw;
+      top: 100px;
+    }
+    .omeni--two {
+      width: 400px;
+      font-size: 14px;
+      left: 55vw;
+      top: 430px;
+    }
+    .omeni--three {
+      width: 400px;
+      font-size: 14px;
+      left: 5vw;
+      top: 810px;
+    }
+    .omeni--four {
+      width: 400px;
+      font-size: 14px;
+      left: 55vw;
+      top: 1200px;
+    }
+  }
+}
+
+//  {
 //   .omeniOsnovno {
 //     top: 3400px; }
 //   .naslovTri {
-//     left: 70px;
-//     width: 768px;
-//     height: 146px;
-//     font-size: 50px; }
+
 //   .prviParagraf {
-//     width: 400px;
-//     height: 300px;
-//     font-size: 15px;
-//     left: 5vw;
-//     top: 100px; }
+
 //   .drugiParagraf {
-//     width: 400px;
-//     height: 315px;
-//     font-size: 15px;
-//     left: 55vw;
-//     top: 450px; }
+//      }
 //   .treciParagraf {
-//     width: 400px;
-//     height: 345px;
-//     font-size: 15px;
-//     left: 5vw;
-//     top: 800px; }
+
 //   .cetvrtiParagraf {
-//     width: 400px;
-//     height: 300px;
-//     font-size: 15px;
-//     left: 55vw;
-//     top: 1200px; } }
+//      } }
 
 // @media only screen and (max-width: 800px) {
 //   .omeniOsnovno {

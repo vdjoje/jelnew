@@ -114,17 +114,13 @@ span {
     top: 400px;
     left: 87vw;
   }
-  .kontakt--email {
-    padding-top: 0px !important;
-    color: red !important;
-  }
 }
 
 @media only screen and (max-width: 1366px) {
   span {
     .kontakt {
       width: 1366px;
-      top: 4900px;
+      top: 4660px;
     }
     .kontakt--naslov {
       font-size: 100px;
@@ -163,51 +159,15 @@ span {
   }
 }
 
-//   #copyRight {
-//     left: 88.5%;
-//     top: 870px;
-//   }
-
-//   #copyLogo {
-//     top: 870px;
-//     left: 95%;
-//   }
-// }
-
-// @media only screen and (max-width: 1280px) {
-//   .kontaktStart {
-//     width: 1280px;
-//     height: 400px;
-//     top: 4700px;
-//     padding-bottom: 0px;
-//   }
-
-//   .kontaktNaslov {
-//     font-size: 50px;
-//     left: 5vw;
-//     top: 300px;
-//   }
-
-//   .ime {
-//     font-size: 40px;
-//     top: 440px;
-//     left: 5vw;
-//   }
-
-//   .ime p {
-//     line-height: 2.5;
-//   }
-
-//   .kontaktInfo {
-//     font-size: 15px;
-//     top: 280px;
-//     left: 35vw;
-//   }
-
-//   #logoMj {
-//     left: 65vw;
-//   }
-// }
+@media only screen and (max-width: 1280px) {
+  span {
+    .kontakt {
+      width: 1280px;
+      top: 4300px;
+      padding-bottom: 0px;
+    }
+  }
+}
 
 // @media only screen and (max-width: 800px) {
 //   .kontaktStart {

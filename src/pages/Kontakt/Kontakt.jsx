@@ -3,7 +3,6 @@ import { Button, Icon, Image } from "semantic-ui-react";
 import { Element, Link } from "react-scroll";
 import logo from "../../logo.svg";
 import uon2x from "../../uon2x.png";
-import InlineSVG from "svg-inline-react";
 
 const Kontakt = () => {
   return (

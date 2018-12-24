@@ -24,27 +24,6 @@ export default class Topbar extends Component {
     super();
     this.state = { submenuVisible: false };
   }
-  // constructor(props) {
-  //   super(props);
-  //   this.handleClick = this.handleClick;
-  // }
-
-  // handleOpenNav = () => {
-  //   document.getElementById("mySidenav").style.height = "350px";
-  //   document.getElementById("mySidenav").style.borderBottom =
-  //     "1px #ad985e solid";
-  // };
-
-  // handleCloseNav = () => {
-  //   document.getElementById("mySidenav").style.height = "0";
-  //   document.getElementById("mySidenav").style.borderBottom = "0px";
-  // };
-
-  // state = {
-  //   activeItem: "home"
-  // };
-
-  // handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   openNav = e => {
     this.setState({ submenuVisible: !this.state.submenuVisible });

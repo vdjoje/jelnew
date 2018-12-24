@@ -3,7 +3,7 @@ span {
     z-index: 99;
     position: relative;
     width: 1920px;
-    top: 6000px;
+    top: 6030px;
   }
   .kontakt--naslov {
     color: black;
@@ -46,10 +46,11 @@ span {
   }
 
   .kontakt--info {
+    @include flex(column, left, left);
     font-family: $Playful;
     font-size: 25px;
     font-weight: bold;
-    line-height: 1;
+    line-height: 2;
     text-align: left;
     position: relative;
     top: 220px;
@@ -133,7 +134,7 @@ span {
       left: 5vw;
     }
     .kontakt--info {
-      @include flex(column, left, center);
+      @include flex(column, left, left);
       font-size: 20px;
       top: 250px;
       left: 30vw;
@@ -169,51 +170,37 @@ span {
   }
 }
 
-// @media only screen and (max-width: 800px) {
-//   .kontaktStart {
-//     width: 800px;
-//     height: 100px;
-//     top: 4900px;
+@media only screen and (max-width: 800px) {
+  span {
+    .kontakt {
+      top: 3950px;
+      height: 3000px;
+    }
+    .kontakt--ime {
+      font-size: 25px;
+      top: 300px;
+      left: 5vw;
+    }
+    .kontakt--info {
+      font-size: 18px;
+      top: 200px;
+      left: 35vw;
+    }
+    #kontakt--logo {
+      top: 140px;
+      left: 80vw;
+    }
 
-//   }
-
-//   .kontaktNaslov {
-//     top: 0px;
-//     font-size: 40px;
-//     left: 5vw;
-//     align-self: center;
-//   }
-
-//   .ime {
-//     font-size: 30px;
-//     top: 147px;
-//     left: 5vw;
-//   }
-
-//   .kontaktInfo {
-//     font-size: 12px;
-//     top: -20px;
-//     left: 35vw;
-//   }
-
-//   #logoMj {
-//     top: -130px;
-//     left: 60vw;
-
-//   }
-
-//   #copy {
-//     top: 500px;
-//     left: 3vw;
-//   }
-
-//   #copyRight {
-//     left: 80vw;
-//     top: 500px;
-//   }
-
-//   #copyLogo {
-//     top: 500px;
-//     left: 91vw;
-//   }
-// } */
+    #kontakt--copy {
+      top: 410px;
+    }
+    #kontakt--devby {
+      left: 78vw;
+      top: 380px;
+    }
+    #kontakt--uon {
+      top: 410px;
+      left: 84vw;
+    }
+  }
+}

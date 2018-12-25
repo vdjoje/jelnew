@@ -318,3 +318,63 @@ span {
     }
   }
 }
+
+@media only screen and (max-width: 360px) {
+  span {
+    .usluge {
+      .usluge--one {
+        font-size: 30px;
+        top: -380px;
+        left: 30px;
+        letter-spacing: 1.2px;
+      }
+      .usluge--two {
+        font-size: 30px;
+        left: 42vw;
+        top: -370px;
+        color: white;
+      }
+      .usluge--three {
+        width: 500px;
+        font-size: 30px;
+        left: 30vw;
+        top: -335px;
+        letter-spacing: 1.2px;
+        color: white;
+      }
+      .usluge--naslov {
+        font-size: 16px;
+        left: -190px;
+        top: -220px;
+      }
+      .usluge--nav {
+        font-size: 15px;
+        top: 780px;
+        left: 10vw;
+      }
+      .usluge--naslovtwo {
+        font-size: 15px;
+        left: 10vw;
+        top: 1510px;
+        width: 250px;
+      }
+      .usluge--podnas {
+        width: 350px;
+        font-size: 15px;
+        left: 50vw;
+        top: 1255px;
+      }
+      .usluge--navtwo {
+        left: 50vw;
+        top: 1400px;
+        & p {
+          font-size: 15px;
+        }
+        & li {
+          font-size: 12px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}

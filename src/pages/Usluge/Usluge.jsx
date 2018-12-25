@@ -11,16 +11,12 @@ const Usluge = () => {
       </Element>
       <p className="usluge--naslov">Mogu Vam pomoći sa izradom</p>
       <div>
-        <ol className="usluge--nav">
+        <ul className="usluge--nav">
           <li>Idejnih rešenja</li>
           <li>Idejnih projekata</li>
           <li>
             Glavnih projekata <br />
             (za potrebe dobijanja građevinske dozvole)
-          </li>
-          <li>
-            Projekata za izvođenje <br />
-            (za potrebe dobijanja upotrebne dozvole)
           </li>
           <li>
             Projekata izvedenog objekta <br />
@@ -31,7 +27,7 @@ const Usluge = () => {
             (glavni, idejni)
           </li>
           <li>Kordinacija prilikom izrade projekata</li>
-        </ol>
+        </ul>
       </div>
       <p className="usluge--naslovtwo">
         Svi projekti se u potpunosti izrađuju po važećim propisima i zakonima i
@@ -41,15 +37,10 @@ const Usluge = () => {
         Aktivnosti prilikom ugovaranja obuhvataju nekoliko faza:
       </p>
       <ul className="usluge--navtwo">
-        <p>prva faza</p>
         <li>Definisanje projektnog zafatka</li>
-        <p>Druga faza</p>
         <li>Izdrada konceptualnog rešenja u varijantama</li>
-        <p>Treca faza</p>
         <li>Odabir varijante za dalju razradu</li>
-        <p>Cetvrta faza</p>
         <li>Prezentovanje razrađene varijante - Idejno rešenje</li>
-        <p>Peta faza</p>
         <li>
           Korekcija i izrada detaljne tehnicke dokumentacije na nivou glavnog
           (Idejnog) projekta

@@ -69,8 +69,8 @@ span {
     text-align: center;
     color: black;
     position: absolute;
-    left: 308px;
-    top: 998px;
+    left: 130px;
+    top: 1100px;
   }
 
   .usluge--nav {
@@ -87,19 +87,22 @@ span {
     color: black;
     position: absolute;
     left: 215px;
-    top: 1098px;
+    top: 1200px;
     list-style-type: none;
     counter-reset: item;
     padding-left: 0px;
-    & li:before {
-      content: counter(item) ". ";
-      counter-increment: item;
+    & li::before {
       color: $gold;
+      content: "\2022";
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
     }
   }
 
   .usluge--naslovtwo {
-    width: 580px;
+    width: 470px;
     height: 195px;
     font-family: $Playful;
     font-size: 30px;
@@ -133,21 +136,18 @@ span {
   }
 
   .usluge--navtwo {
-    min-width: 500px;
+    min-width: 700px;
     font-family: $Montserat;
-    font-size: 25px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1;
     letter-spacing: 0.6px;
     text-align: left;
     color: white;
     position: absolute;
     left: 1050px;
-    top: 1980px;
+    top: 2020px;
     & li {
-      font-size: 30px;
+      padding-bottom: 40px;
+      font-size: 25px;
       list-style: none;
     }
     & li::before {
@@ -157,20 +157,6 @@ span {
       display: inline-block;
       width: 1em;
       margin-left: -1em;
-    }
-    & p {
-      width: 500px;
-      height: 14px;
-      font-family: $Montserat;
-      font-size: 20px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 0;
-      letter-spacing: 0.6px;
-      text-align: Left;
-      color: white;
-      text-transform: uppercase;
     }
   }
 }

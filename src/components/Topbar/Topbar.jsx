@@ -12,8 +12,6 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-70px";
-    // document.getElementById("mySidenav").style.height = "0";
-    // document.getElementById("mySidenav").style.borderBottom = "0px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -22,11 +20,19 @@ export default class Topbar extends Component {
   constructor() {
     super();
     this.state = { submenuVisible: false };
+    this.state = { resVisible: false };
   }
 
   openNav = e => {
     this.setState({ submenuVisible: !this.state.submenuVisible });
-    console.log(e);
+  };
+
+  closeNav = e => {
+    this.setState({ submenuVisible: false });
+  };
+
+  openResNav = () => {
+    this.setState({ resVisible: !this.state.resVisible });
   };
 
   render() {
@@ -34,7 +40,13 @@ export default class Topbar extends Component {
       <header id="navbar">
         <div className="header--container">
           <nav>
-            <Link to="usluge" spy={true} smooth={true} duration={500}>
+            <Link
+              onClick={this.closeNav}
+              to="usluge"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               Usluge
             </Link>
             <a onClick={this.openNav}>
@@ -43,6 +55,7 @@ export default class Topbar extends Component {
             </a>
           </nav>
           <Image
+            onClick={this.closeNav}
             src={logo}
             id="header--logo"
             alt="logo"
@@ -54,16 +67,34 @@ export default class Topbar extends Component {
             to="home"
           />
           <nav>
-            <Link to="omeni" spy={true} smooth={true} duration={500}>
+            <Link
+              onClick={this.closeNav}
+              to="omeni"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               O meni
             </Link>
-            <Link to="kontakt" spy={true} smooth={true} duration={500}>
+            <Link
+              onClick={this.openResNav}
+              to="kontakt"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               Kontakt
             </Link>
           </nav>
+          <div className="header--menu">
+            <Icon onClick={this.closeResnav} size="large" name="bars" />
+          </div>
+          {this.state.resVisible ? (
+            <div style={{ color: "red" }}>test</div>
+          ) : null}
         </div>
         {this.state.submenuVisible ? (
-          <div className="header--submenu">
+          <div id="subnav" className="header--submenu">
             <div className="header--subnav">
               <h3>01.</h3>
               <a href="/oaza">Poslovni Apartmanski Objekat ‘OAZA’</a>

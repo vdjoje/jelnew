@@ -278,14 +278,57 @@ span {
         height: 1210px;
       }
     }
-    // .lastDiv {
-    //   .lastDiv--last {
-    //     top: 476px;
+  }
+}
 
-    //   }
-    //   .lastDiv--lastgold {
-    //     top: 446px;
-    //   }
-    // }
+@media only screen and (max-width: 360px) {
+  span {
+    .line {
+      width: 360px;
+    }
+    .backDiv {
+      .backDiv--lbgold {
+        border-bottom: 240px solid $gold;
+        border-right: 360px solid transparent;
+        top: 0px;
+      }
+      .backDiv--lb {
+        margin-top: 40px;
+        border-bottom: 200px solid black;
+        border-right: 360px solid transparent;
+      }
+      .backDiv--lt {
+        display: none;
+      }
+      .backDiv--ltgold {
+        display: none;
+      }
+      .backDiv--rb {
+        display: none;
+      }
+      .backDiv--rbgold {
+        display: none;
+      }
+      .backDiv--rt {
+        display: none;
+      }
+      .backDiv--rtgold {
+        display: none;
+      }
+      .backDiv--para {
+        display: none;
+      }
+      .backDiv--paragold {
+        display: none;
+      }
+    }
+    .lastDiv {
+      .lastDiv--last {
+        display: none;
+      }
+      .lastDiv--lastgold {
+        display: none;
+      }
+    }
   }
 }

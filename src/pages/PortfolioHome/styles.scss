@@ -10,34 +10,34 @@ span {
     background-color: white;
     border-top: 2px solid $gold;
     border-bottom: 2px solid $gold;
-  }
-  .portfolioHome--card {
-    width: 24%;
-    margin: 2%;
-    border-left: 2px solid $gold;
-    padding-left: 2%;
-  }
-  .portfolioHome--card h3 {
-    font-family: $Playful;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-  }
-  .portfolioHome--card h3::first-letter {
-    color: $gold;
-  }
-  .portfolioHome--card p {
-    font-family: $Montserat;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    color: black;
-    font-size: 18px;
-    line-height: 1.94;
-    letter-spacing: 0.5px;
-    width: 100%;
+    .portfolioHome--card {
+      width: 24%;
+      margin: 2%;
+      border-left: 2px solid $gold;
+      padding-left: 2%;
+      & h3 {
+        font-family: $Playful;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        &::first-letter {
+          color: $gold;
+        }
+      }
+      & p {
+        font-family: $Montserat;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        color: black;
+        font-size: 18px;
+        line-height: 1.94;
+        letter-spacing: 0.5px;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -71,6 +71,33 @@ span {
     .portfolioHome {
       height: 800px;
       top: 2550px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  span {
+    .portfolioHome {
+      @include flex(column, space-between, center);
+      height: 1250px;
+      top: 1260px;
+      .portfolioHome--card {
+        width: 84%;
+        margin-top: 40px;
+        border-left: 0px;
+        padding-left: 0%;
+        & h3 {
+          margin-top: 10px;
+          font-size: 16px;
+          &::first-letter {
+            color: $gold;
+          }
+        }
+        & p {
+          margin-top: 0px;
+          font-size: 10px;
+        }
+      }
     }
   }
 }

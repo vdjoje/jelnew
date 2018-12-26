@@ -244,3 +244,66 @@ span {
     }
   }
 }
+
+@media only screen and (max-width: 360px) {
+  span {
+    .omeni {
+      top: 2702px;
+      height: 1030px;
+      width: 360px;
+      background-color: black;
+    }
+    .omeni--naslov {
+      margin-top: 20px;
+      left: 30px;
+      font-size: 25px;
+    }
+    .omeni--one {
+      width: 300px;
+      font-size: 10px;
+      left: 30px;
+      top: 50px;
+      border-left: 0px;
+      padding-left: 0px;
+      &::first-letter {
+        font-size: 20px;
+      }
+    }
+    .omeni--two {
+      width: 300px;
+      font-size: 10px;
+      left: 30px;
+      top: 230px;
+      border-left: 0px;
+      padding-left: 0px;
+      padding-top: 50px;
+      &::first-letter {
+        font-size: 20px;
+      }
+    }
+    .omeni--three {
+      width: 300px;
+      font-size: 10px;
+      left: 30px;
+      top: 480px;
+      border-left: 0px;
+      padding-left: 0px;
+      padding-top: 50px;
+      &::first-letter {
+        font-size: 20px;
+      }
+    }
+    .omeni--four {
+      width: 300px;
+      font-size: 10px;
+      left: 30px;
+      top: 740px;
+      padding-top: 50px;
+      border-left: 0px;
+      padding-left: 0px;
+      &::first-letter {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -50,14 +50,16 @@ const Kontakt = () => {
         duration={500}
         to="home"
       />
-      <div id="kontakt--copy">Copyright by Jelena Mišković </div>
-      <p id="kontakt--devby">Developed by</p>
-      <Image
-        id="kontakt--uon"
-        href="https://uon.rs/"
-        target="_blank"
-        src={uon2x}
-      />
+      <div id="kontakt--footer">
+        <div id="kontakt--copy">Copyright by Jelena Mišković </div>
+        <p id="kontakt--devby">Developed by</p>
+        <Image
+          id="kontakt--uon"
+          href="https://uon.rs/"
+          target="_blank"
+          src={uon2x}
+        />
+      </div>
     </span>
   );
 };

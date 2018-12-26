@@ -203,3 +203,67 @@ span {
     }
   }
 }
+
+@media only screen and (max-width: 360px) {
+  span {
+    .kontakt {
+      top: 3550px;
+      left: 12px;
+      height: 250px;
+    }
+    .kontakt--naslov {
+      top: 0px;
+      font-size: 28px;
+    }
+    .kontakt--ime {
+      top: -150px;
+      left: 21px;
+      @include flex(column, left, top);
+      & p {
+        font-size: 20px;
+      }
+    }
+    .kontakt--info {
+      font-size: 12px;
+      top: -130px;
+      left: 21px;
+    }
+    #kontakt--face {
+      top: 46px;
+      left: 220px;
+      transform: scale(0.5, 0.5);
+    }
+    #kontakt--insta {
+      top: 46px;
+      left: 260px;
+      transform: scale(0.5, 0.5);
+    }
+    #kontakt--logo {
+      top: -305px;
+      left: 280px;
+    }
+    #kontakt--footer {
+      width: 360px;
+      height: 30px;
+      top: -150px;
+      left: -12px;
+      position: relative;
+      background: black;
+    }
+    #kontakt--copy {
+      top: 5px;
+      font-size: 9px;
+    }
+    #kontakt--devby {
+      left: 265px;
+      top: -22px;
+      font-size: 9px;
+      color: white;
+    }
+    #kontakt--uon {
+      top: 4px;
+      left: 310px;
+      transform: scale(0.5, 0.5);
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Image, Button, Icon } from "semantic-ui-react";
+import { Image, Button, Icon, Divider } from "semantic-ui-react";
 import logo from "../../logo.svg";
+import logoGray from "../../logogray.svg";
 import { Link } from "react-scroll";
 import InlineSVG from "svg-inline-react";
 import { arrowDown } from "../../assets/svg";
@@ -25,14 +26,19 @@ export default class Topbar extends Component {
 
   openNav = e => {
     this.setState({ submenuVisible: !this.state.submenuVisible });
+    this.setState({ resVisible: false });
   };
 
   closeNav = e => {
     this.setState({ submenuVisible: false });
   };
 
-  openResNav = () => {
+  openResNav = e => {
     this.setState({ resVisible: !this.state.resVisible });
+  };
+
+  closeResNav = e => {
+    this.setState({ resVisible: false });
   };
 
   render() {
@@ -87,11 +93,19 @@ export default class Topbar extends Component {
             </Link>
           </nav>
           <div className="header--menu">
-            <Icon onClick={this.closeResnav} size="large" name="bars" />
+            <Button
+              onClick={this.openResNav}
+              id="header--resbutton"
+              animated="vertical"
+            >
+              <Button.Content hidden>
+                <Icon name="close" />
+              </Button.Content>
+              <Button.Content visible>
+                <Icon name="bars" />
+              </Button.Content>
+            </Button>
           </div>
-          {this.state.resVisible ? (
-            <div style={{ color: "red" }}>test</div>
-          ) : null}
         </div>
         {this.state.submenuVisible ? (
           <div id="subnav" className="header--submenu">
@@ -150,81 +164,43 @@ export default class Topbar extends Component {
             </div>
           </div>
         ) : null}
+        {this.state.resVisible ? (
+          <div className="header--menuRes">
+            <Link
+              onClick={this.closeResNav}
+              to="usluge"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Usluge
+            </Link>
+            <a onClick={this.openNav}>
+              Portfolio
+              {/* <InlineSVG src={arrowDown} /> */}
+            </a>
+            <Link
+              onClick={this.closeResNav}
+              to="omeni"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              O meni
+            </Link>
+            <Link
+              onClick={this.closeResNav}
+              to="kontakt"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Kontakt
+            </Link>
+            <Image id="header--resLogo" src={logoGray} />
+          </div>
+        ) : null}
       </header>
-
-      // <div id="navbar" className="menuStyle">
-      //   <Menu
-      //     pointing
-      //     secondary
-      //     style={{
-      //       borderBottom: "0px solid"
-      //     }}
-      //   >
-      //     <Menu.Menu id="menuMenu" position="left">
-      //       <Menu.Item
-      //         id="menuItem"
-      //         to="usluge"
-      //         as={Link}
-      //         spy={true}
-      //         smooth={true}
-      //         duration={500}
-      //         name="USLUGE"
-      //         onClick={this.handleItemClick}
-      //       />
-      //       <Menu.Item
-      //         id="menuItem"
-      //         name="PORTFOLIO"
-      //         onClick={this.handleOpenNav}
-      //         icon="angle down"
-      //       />
-      //     </Menu.Menu>
-      //     <Image
-      //       ui="true"
-      //       src={logo}
-      //       id="logoTop"
-      //       // className="App-logo"
-      //       alt="logo"
-      //       size="small"
-      //       as={Link}
-      //       spy={true}
-      //       smooth={true}
-      //       duration={500}
-      //       to="home"
-      //     />
-      //     <Menu.Menu id="menuMenu" position="right">
-      //       <Menu.Item
-      //         id="menuItem"
-      //         as={Link}
-      //         spy={true}
-      //         smooth={true}
-      //         duration={500}
-      //         name="O MENI"
-      //         onClick={this.handleItemClick}
-      //         to="omeni"
-      //       />
-      //       <Menu.Item
-      //         id="menuItem"
-      //         as={Link}
-      //         spy={true}
-      //         smooth={true}
-      //         duration={500}
-      //         name="KONTAKT"
-      //         onClick={this.handleItemClick}
-      //         to="kontakt"
-      //       />
-      //     </Menu.Menu>
-      //     <div id="mySidenav" className="sidenav">
-      //       <a
-      //         href="javascript:void(0)"
-      //         className="closebtn"
-      //         onClick={this.handleCloseNav}
-      //       >
-      //         &times;
-      //       </a>
-
-      // </div>
-      //   </Menu>
-      // </div>
     );
   }
 }

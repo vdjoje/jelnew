@@ -36,6 +36,11 @@
 //   }
 // }
 
-#segTest {
-  background: black;
+span {
+  margin-top: 70px;
+  .portfolio--gallery {
+    padding-top: 50px;
+    background: black;
+    color: white;
+  }
 }

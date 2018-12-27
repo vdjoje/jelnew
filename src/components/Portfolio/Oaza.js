@@ -5,8 +5,8 @@ import Galerija from "./Galerija";
 import slike from "./Slike";
 
 const Oaza = () => (
-  <div style={{ width: "80%", margin: "auto", paddingTop: "5%" }}>
-    <Segment id="segTest">
+  <span className="porfolio">
+    <div className="portfolio--gallery">
       <h3>Poslovno-apartmanski objekat "Oaza"</h3>
       <Button id="backButton" floated="right" as={Link} to="/">
         <Icon name="angle left" size="big" />
@@ -17,8 +17,8 @@ const Oaza = () => (
         Podgorica ( autor i koordinator )
       </p>
       <Galerija photos={slike.oaza} />
-    </Segment>
-  </div>
+    </div>
+  </span>
 );
 
 export default Oaza;

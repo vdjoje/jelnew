@@ -3,7 +3,7 @@ span {
     z-index: 99;
     position: relative;
     width: 1920px;
-    top: 6030px;
+    top: 5950px;
   }
   .kontakt--naslov {
     color: black;
@@ -112,7 +112,7 @@ span {
   }
   #kontakt--uon {
     top: 400px;
-    left: 87vw;
+    left: 95vw;
   }
 }
 
@@ -266,4 +266,40 @@ span {
       transform: scale(0.5, 0.5);
     }
   }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  span {
+    .kontakt--naslov {
+      top: -20px;
+      font-size: 28px;
+    }
+
+    #kontakt--face {
+      left: 210px;
+    }
+    #kontakt--insta {
+      left: 240px;
+    }
+    #kontakt--logo {
+      left: 260px;
+    }
+    #kontakt--footer {
+      width: 100vw;
+    }
+
+    #kontakt--devby {
+      left: 225px;
+    }
+    #kontakt--uon {
+      left: 270px;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }

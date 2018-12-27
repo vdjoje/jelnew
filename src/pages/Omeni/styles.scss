@@ -23,7 +23,7 @@ span {
   .omeni--one {
     width: 735px;
     height: auto;
-    font-family: $Montserat;
+    font-family: $Playful;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -48,7 +48,7 @@ span {
   .omeni--two {
     width: 735px;
     height: auto;
-    font-family: $Montserat;
+    font-family: $Playful;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -73,7 +73,7 @@ span {
   .omeni--three {
     width: 735px;
     height: auto;
-    font-family: $Montserat;
+    font-family: $Playful;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -98,7 +98,7 @@ span {
   .omeni--four {
     width: 735px;
     height: auto;
-    font-family: $Montserat;
+    font-family: $Playful;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -306,4 +306,35 @@ span {
       }
     }
   }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  span {
+    .omeni {
+      top: 2699px;
+      height: 1033px;
+      width: 100vw;
+    }
+    .omeni--naslov {
+    }
+    .omeni--one {
+      width: 270px;
+    }
+    .omeni--two {
+      width: 270px;
+    }
+    .omeni--three {
+      width: 270px;
+    }
+    .omeni--four {
+      width: 270px;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }

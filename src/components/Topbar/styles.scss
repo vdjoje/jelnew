@@ -269,3 +269,54 @@ header {
     }
   }
 }
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen and (max-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  header {
+    width: 100vw;
+    height: 40px;
+    .header--submenu {
+      height: 600px;
+      top: 40px;
+      padding-top: 35px;
+      padding-left: 30px;
+      .header--subnav {
+        & h3 {
+          font-size: 12px;
+          padding-top: 15px;
+          margin-bottom: 0px;
+        }
+        & a {
+          font-size: 12px;
+        }
+      }
+      #header--kontakt {
+        display: none;
+      }
+      .header--icons {
+        top: 500px;
+        right: 30px;
+      }
+    }
+    .header--container {
+      nav {
+        display: none;
+        a {
+        }
+      }
+      #header--logo {
+        width: 10%;
+        margin: auto;
+      }
+      .header--menu {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}

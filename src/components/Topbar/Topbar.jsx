@@ -27,6 +27,7 @@ export default class Topbar extends Component {
   openNav = e => {
     this.setState({ submenuVisible: !this.state.submenuVisible });
     this.setState({ resVisible: false });
+    console.log("test");
   };
 
   closeNav = e => {
@@ -83,7 +84,7 @@ export default class Topbar extends Component {
               O meni
             </Link>
             <Link
-              onClick={this.openResNav}
+              onClick={this.closeNav}
               to="kontakt"
               spy={true}
               smooth={true}

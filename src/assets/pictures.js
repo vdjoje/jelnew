@@ -70,7 +70,7 @@ export default {
     { src: bf2, width: 6, height: 4 },
     { src: bf3, width: 6, height: 4 },
     { src: bf4, width: 6, height: 4 },
-    { src: bf5, width: 6, height: 6 }
+    { src: bf5, width: 6, height: 4 }
   ],
 
   stambeni: [

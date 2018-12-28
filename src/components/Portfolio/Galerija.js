@@ -35,13 +35,14 @@ export default class Galerija extends Component {
   }
   render() {
     return (
-      <div
-        style={{
-          marginTop: "5%"
-        }}
-      >
+      <div>
         <span>{this.props.span}</span>
-        <Gallery photos={this.props.photos} onClick={this.openLightbox} />
+        <Gallery
+          columns={2}
+          margin={10}
+          photos={this.props.photos}
+          onClick={this.openLightbox}
+        />
         <Lightbox
           images={this.props.photos}
           onClose={this.closeLightbox}

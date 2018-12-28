@@ -1,46 +1,79 @@
-// .gallery {
-//   width: 75%;
-//   margin: auto;
-//   margin-top: 5%;
-// }
-
-// .gallery h3 {
-//   text-align: center;
-//   text-transform: uppercase;
-// }
-
-// .gallery h3::first-letter {
-//   color: #ad985e;
-// }
-
-// .gallery p {
-//   padding-top: 2%;
-// }
-
 #backButton {
-  color: #ad985e;
+  position: absolute;
+  color: $gold;
   background: transparent;
+  right: 200px;
+  top: 15px;
 }
 
 #backButton:hover {
   color: white;
 }
 
-// #segTest {
-// }
-
-// span {
-//   .portfolio {
-//     width: 100%;
-//     background: yellow;
-//   }
-// }
-
-span {
+.porfolio {
   margin-top: 70px;
+
   .portfolio--gallery {
-    padding-top: 50px;
-    background: black;
+    @include flex(column, center);
+    // padding-top: 10px;
     color: white;
+    background: black;
+    width: 100vw;
+    height: calc(100vh - (70px));
+    .portfolio--frame {
+      width: 80vw;
+      margin-left: 10vw;
+      border-left: 2px solid $gold;
+      border-right: 2px solid $gold;
+      .portfolio--images {
+        padding-left: 3vw;
+        width: 60vw;
+        padding-right: 10vw;
+      }
+    }
+    & h3 {
+      font-family: $Playful;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: 0.9px;
+      width: 300px;
+      position: relative;
+      float: right;
+      right: 200px;
+      padding-top: 80px;
+    }
+    & p {
+      margin-top: 120px;
+      position: absolute;
+      top: 200px;
+      right: 294px;
+      width: 400px;
+      font-family: $Montserat;
+      font-size: 18px;
+      line-height: 1.94;
+      letter-spacing: 0.5px;
+      padding-top: 50px;
+    }
+    & h2 {
+      position: absolute;
+      right: 634px;
+      font-family: $Montserat;
+      font-size: 45px;
+      font-weight: bold;
+      text-align: center;
+      color: $gold;
+    }
+    & h4 {
+      padding-top: 90px;
+      position: absolute;
+      font-family: $Montserat;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.94;
+      letter-spacing: 0.5px;
+      left: 1230px;
+      top: 480px;
+    }
   }
 }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Image, Button, Icon, Divider } from "semantic-ui-react";
-// import logo from "../../logo.svg";
 import logoGray from "../../logogray.svg";
 import { Link } from "react-scroll";
 import InlineSVG from "svg-inline-react";

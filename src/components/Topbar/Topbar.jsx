@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Image, Button, Icon, Divider } from "semantic-ui-react";
-import logo from "../../logo.svg";
+// import logo from "../../logo.svg";
 import logoGray from "../../logogray.svg";
 import { Link } from "react-scroll";
 import InlineSVG from "svg-inline-react";
 import { arrowDown } from "../../assets/svg";
+import { logo } from "../../assets/svg";
 
 let prevScrollpos = window.pageYOffset;
+
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -22,12 +24,13 @@ export default class Topbar extends Component {
     super();
     this.state = { submenuVisible: false };
     this.state = { resVisible: false };
+
+    console.log(this.props);
   }
 
   openNav = e => {
     this.setState({ submenuVisible: !this.state.submenuVisible });
     this.setState({ resVisible: false });
-    console.log("test");
   };
 
   closeNav = e => {
@@ -58,21 +61,15 @@ export default class Topbar extends Component {
             </Link>
             <a onClick={this.openNav}>
               Portfolio
-              <InlineSVG src={arrowDown} />
+              <InlineSVG
+                className={`${this.state.submenuVisible ? "opened" : ""}`}
+                src={arrowDown}
+              />
             </a>
           </nav>
-          <Image
-            onClick={this.closeNav}
-            src={logo}
-            id="header--logo"
-            alt="logo"
-            size="small"
-            as={Link}
-            spy={true}
-            smooth={true}
-            duration={500}
-            to="home"
-          />
+          <Link to="home" spy={true} smooth={true} duration={500}>
+            <InlineSVG className="header--logo" src={logo} />
+          </Link>
           <nav>
             <Link
               onClick={this.closeNav}

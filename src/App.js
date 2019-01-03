@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.scss";
-import Topbar from "./components/Topbar";
 import Main from "./switches/Main";
 
 class App extends Component {
@@ -38,11 +37,11 @@ class App extends Component {
       <div className="main">
         {/* {this.state.loaded ? (
           <> */}
-        {this.state.width < 700 ? null : (
+        {/* {this.state.width < 700 ? null : (
           <Topbar
             size={{ width: this.state.width, height: this.state.height }}
           />
-        )}
+        )} */}
         <Main />
       </div>
     );

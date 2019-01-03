@@ -1,0 +1,21 @@
+#topPort--logo {
+  position: absolute;
+  left: 10vw;
+}
+
+#port--button {
+  @include flex(row, center, center);
+  position: absolute;
+  width: 100%;
+  left: 0vw;
+  a {
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+#port--head {
+  max-height: 50px;
+  background: purple;
+}

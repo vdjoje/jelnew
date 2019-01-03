@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Image, Button, Icon } from "semantic-ui-react";
+import { Button, Icon } from "semantic-ui-react";
 import logoGray from "../../logogray.svg";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import InlineSVG from "svg-inline-react";
 import { arrowDown } from "../../assets/svg";
 import { logo } from "../../assets/svg";
 
-export default class Topbar extends Component {
+export default class TopbarPortfolio extends Component {
   constructor() {
     super();
     this.state = { submenuVisible: false };
@@ -33,30 +33,10 @@ export default class Topbar extends Component {
   };
 
   render() {
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-70px";
-      }
-      prevScrollpos = currentScrollPos;
-    };
-
     return (
-      <header id="navbar">
-        <div className="header--container">
-          <nav>
-            <Link
-              onClick={this.closeNav}
-              to="usluge"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              Usluge
-            </Link>
+      <header>
+        <div id="port--head" className="header--container">
+          <nav id="port--button">
             <a onClick={this.openNav}>
               Portfolio
               <InlineSVG
@@ -65,29 +45,10 @@ export default class Topbar extends Component {
               />
             </a>
           </nav>
-          <Link to="home" spy={true} smooth={true} duration={500}>
+          <Link id="topPort--logo" to="/">
             <InlineSVG className="header--logo" src={logo} />
           </Link>
-          <nav>
-            <Link
-              onClick={this.closeNav}
-              to="omeni"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              O meni
-            </Link>
-            <Link
-              onClick={this.closeNav}
-              to="kontakt"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              Kontakt
-            </Link>
-          </nav>
+
           <div className="header--menu">
             <Button
               onClick={this.openResNav}
@@ -160,6 +121,42 @@ export default class Topbar extends Component {
             </div>
           </div>
         ) : null}
+        {/* {this.state.resVisible ? (
+          <div className="header--menuRes">
+            <Link
+              onClick={this.closeResNav}
+              to="usluge"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Usluge
+            </Link>
+            <a onClick={this.openNav}>
+              Portfolio
+              {/* <InlineSVG src={arrowDown} /> */}
+        {/* </a> */}
+        {/* <Link */}
+        {/* onClick={this.closeResNav} */}
+        {/* to="omeni" */}
+        {/* spy={true} */}
+        {/* smooth={true} */}
+        {/* duration={500} */}
+        {/* > */}
+        {/* O meni */}
+        {/* </Link> */}
+        {/* <Link */}
+        {/* onClick={this.closeResNav} */}
+        {/* to="kontakt" */}
+        {/* spy={true} */}
+        {/* smooth={true} */}
+        {/* duration={500} */}
+        {/* > */}
+        {/* Kontakt */}
+        {/* </Link> */}
+        {/* <Image id="header--resLogo" src={logoGray} /> */}
+        {/* </div> */}
+        {/* ) : null} */} */}
       </header>
     );
   }

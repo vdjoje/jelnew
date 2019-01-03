@@ -10,11 +10,12 @@ export default class TopbarRes extends Component {
 
   render() {
     return (
-      <div style={{ position: "absolute" }}>
+      <div className="res">
         <a>testtaa</a>
-        <Link to="home" spy={true} smooth={true} duration={500}>
-          <InlineSVG className="header--logo" src={logo} />
+        <Link id="res--logo" to="home" spy={true} smooth={true} duration={500}>
+          <InlineSVG src={logo} />
         </Link>
+        <a>menu</a>
       </div>
     );
   }

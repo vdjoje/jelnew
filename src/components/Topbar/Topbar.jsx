@@ -10,22 +10,14 @@ export default class Topbar extends Component {
   constructor() {
     super();
     this.state = { submenuVisible: false };
-    this.state = { resVisible: false };
-
-    console.log(this.props);
   }
 
   openNav = e => {
     this.setState({ submenuVisible: !this.state.submenuVisible });
-    this.setState({ resVisible: false });
   };
 
   closeNav = e => {
     this.setState({ submenuVisible: false });
-  };
-
-  openResNav = e => {
-    this.setState({ resVisible: !this.state.resVisible });
   };
 
   closeResNav = e => {
@@ -88,20 +80,6 @@ export default class Topbar extends Component {
               Kontakt
             </Link>
           </nav>
-          <div className="header--menu">
-            <Button
-              onClick={this.openResNav}
-              id="header--resbutton"
-              animated="vertical"
-            >
-              <Button.Content hidden>
-                <Icon name="close" />
-              </Button.Content>
-              <Button.Content visible>
-                <Icon name="bars" />
-              </Button.Content>
-            </Button>
-          </div>
         </div>
         {this.state.submenuVisible ? (
           <div id="subnav" className="header--submenu">

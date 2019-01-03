@@ -312,27 +312,27 @@ span {
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  span {
-    .omeni {
-      top: 2699px;
-      height: 1033px;
-      width: 100vw;
-    }
-    .omeni--naslov {
-    }
-    .omeni--one {
-      width: 270px;
-    }
-    .omeni--two {
-      width: 270px;
-    }
-    .omeni--three {
-      width: 270px;
-    }
-    .omeni--four {
-      width: 270px;
-    }
-  }
+  // span {
+  //   .omeni {
+  //     top: 2699px;
+  //     height: 1033px;
+  //     width: 100vw;
+  //   }
+  //   .omeni--naslov {
+  //   }
+  //   .omeni--one {
+  //     width: 270px;
+  //   }
+  //   .omeni--two {
+  //     width: 270px;
+  //   }
+  //   .omeni--three {
+  //     width: 270px;
+  //   }
+  //   .omeni--four {
+  //     width: 270px;
+  //   }
+  // }
 }
 
 /* Landscape */

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Icon } from "semantic-ui-react";
+import { Image, Button, Icon } from "semantic-ui-react";
 import logoGray from "../../logogray.svg";
 import { Link } from "react-router-dom";
 import InlineSVG from "svg-inline-react";
@@ -35,7 +35,7 @@ export default class TopbarPortfolio extends Component {
   render() {
     return (
       <header>
-        <div id="port--head" className="header--container">
+        <div id="port--head">
           <nav id="port--button">
             <a onClick={this.openNav}>
               Portfolio
@@ -48,21 +48,6 @@ export default class TopbarPortfolio extends Component {
           <Link id="topPort--logo" to="/">
             <InlineSVG className="header--logo" src={logo} />
           </Link>
-
-          <div className="header--menu">
-            <Button
-              onClick={this.openResNav}
-              id="header--resbutton"
-              animated="vertical"
-            >
-              <Button.Content hidden>
-                <Icon name="close" />
-              </Button.Content>
-              <Button.Content visible>
-                <Icon name="bars" />
-              </Button.Content>
-            </Button>
-          </div>
         </div>
         {this.state.submenuVisible ? (
           <div id="subnav" className="header--submenu">
@@ -121,42 +106,6 @@ export default class TopbarPortfolio extends Component {
             </div>
           </div>
         ) : null}
-        {/* {this.state.resVisible ? (
-          <div className="header--menuRes">
-            <Link
-              onClick={this.closeResNav}
-              to="usluge"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              Usluge
-            </Link>
-            <a onClick={this.openNav}>
-              Portfolio
-              {/* <InlineSVG src={arrowDown} /> */}
-        {/* </a> */}
-        {/* <Link */}
-        {/* onClick={this.closeResNav} */}
-        {/* to="omeni" */}
-        {/* spy={true} */}
-        {/* smooth={true} */}
-        {/* duration={500} */}
-        {/* > */}
-        {/* O meni */}
-        {/* </Link> */}
-        {/* <Link */}
-        {/* onClick={this.closeResNav} */}
-        {/* to="kontakt" */}
-        {/* spy={true} */}
-        {/* smooth={true} */}
-        {/* duration={500} */}
-        {/* > */}
-        {/* Kontakt */}
-        {/* </Link> */}
-        {/* <Image id="header--resLogo" src={logoGray} /> */}
-        {/* </div> */}
-        {/* ) : null} */} */}
       </header>
     );
   }

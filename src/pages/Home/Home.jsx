@@ -21,15 +21,16 @@ class Home extends Component {
     // this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
-  componentDidMount() {
-    this.timer = setInterval(() => this.setState({ loaded: true }), 5000);
-    this.updateWindowDimensions();
-    window.addEventListener("resize", this.updateWindowDimensions);
-  }
   componentDidUpdate() {
     console.log("width", this.state.width);
     console.log("height", this.state.height);
   }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+
   updateWindowDimensions = () => {
     this.setState({
       width: window.innerWidth,
@@ -38,7 +39,6 @@ class Home extends Component {
   };
 
   componentWillUnmount() {
-    clearInterval(this.timer);
     window.removeEventListener("resize", this.updateWindowDimensions);
   }
 
@@ -46,8 +46,10 @@ class Home extends Component {
     return (
       <span className="homeStart">
         <div id="navbar" />
-        {this.state.width < 700 ? (
-          <TopbarRes />
+        {this.state.width < 946 ? (
+          <TopbarRes
+            size={{ width: this.state.width, height: this.state.height }}
+          />
         ) : (
           <Topbar
             size={{ width: this.state.width, height: this.state.height }}

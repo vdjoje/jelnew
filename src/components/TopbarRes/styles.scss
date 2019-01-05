@@ -34,14 +34,33 @@
     width: 100vw;
     height: 100vh;
     top: 40px;
-    h3 {
-      font-family: $Playful;
-      color: $gold;
-      font-size: 12px;
-    }
-    a {
-      font-family: $Playful;
-      font-size: 12px;
+    z-index: 99;
+
+    .res--subnav {
+      padding-left: 8vw;
+      width: 100vw;
+      padding-top: 20px;
+      ol {
+        width: 84vw;
+        height: auto;
+        padding-left: inherit;
+        border-right: 2px solid $gold;
+        li {
+          font-family: $Playful;
+          color: $gold;
+          font-size: 18px;
+          align-items: top;
+          padding: 10px;
+          font-weight: bold;
+          a {
+            margin-bottom: 20px;
+            font-family: $Playful;
+            font-size: 14px;
+            color: white;
+            font-weight: normal;
+          }
+        }
+      }
     }
   }
 }

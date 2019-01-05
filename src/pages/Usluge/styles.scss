@@ -395,3 +395,19 @@ span {
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  span {
+    .usluge {
+      .usluge--naslovtwo {
+        width: 260px;
+      }
+
+      .usluge--podnas {
+      }
+      #usluge--aktivnosti {
+        width: 320px;
+      }
+    }
+  }
+}

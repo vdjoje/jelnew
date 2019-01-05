@@ -9,7 +9,8 @@ export default class Portfolio extends Component {
     super();
     this.state = {
       width: null,
-      height: null
+      height: null,
+      columns: 2
     };
     // this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -22,6 +23,7 @@ export default class Portfolio extends Component {
   componentDidUpdate() {
     console.log("width", this.state.width);
     console.log("height", this.state.height);
+    console.log("columns", this.state.columns);
   }
   updateWindowDimensions = () => {
     this.setState({
@@ -53,7 +55,10 @@ export default class Portfolio extends Component {
             <p>{this.props.text}</p>
             <h4>{this.props.position}</h4>
             <div className="portfolio--images">
-              <Galerija photos={this.props.pictures} />
+              <Galerija
+                columns={this.state.columns}
+                photos={this.props.pictures}
+              />
             </div>
           </div>
         </div>

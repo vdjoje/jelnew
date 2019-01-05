@@ -38,7 +38,7 @@ export default class Galerija extends Component {
       <div>
         <span>{this.props.span}</span>
         <Gallery
-          columns={2}
+          columns={this.props.columns}
           margin={10}
           photos={this.props.photos}
           onClick={this.openLightbox}

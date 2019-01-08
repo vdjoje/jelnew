@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, Button, Icon } from "semantic-ui-react";
+import { Button, Icon } from "semantic-ui-react";
 import logoGray from "../../logogray.svg";
 import { Link } from "react-router-dom";
 import InlineSVG from "svg-inline-react";

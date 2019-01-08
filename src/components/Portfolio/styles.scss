@@ -77,6 +77,69 @@
   }
 }
 
+@media only screen and (max-width: 1366px) {
+  .porfolio {
+    // margin-top: 0px;
+    .portfolio--gallery {
+      .portfolio--frame {
+        .portfolio--images {
+        }
+      }
+      & h3 {
+        font-size: 20px;
+        right: 80px;
+      }
+      & p {
+        width: 300px;
+        font-size: 14px;
+        right: 215px;
+        margin-top: 80px;
+      }
+      & h2 {
+        font-size: 30px;
+        right: 481px;
+      }
+      & h4 {
+        font-size: 14px;
+        left: 856px;
+        padding-top: 40px;
+      }
+    }
+    #backButton {
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .porfolio {
+    // margin-top: 0px;
+    .portfolio--gallery {
+      .portfolio--frame {
+        .portfolio--images {
+        }
+      }
+      & h3 {
+        right: 60px;
+      }
+      & p {
+        width: 300px;
+        right: 185px;
+        margin-top: 80px;
+      }
+      & h2 {
+        font-size: 30px;
+        right: 451px;
+      }
+      & h4 {
+        left: 798px;
+        padding-top: 40px;
+      }
+    }
+    #backButton {
+    }
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .porfolio {
     // margin-top: 0px;

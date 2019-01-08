@@ -40,7 +40,7 @@ export default class Portfolio extends Component {
   render() {
     return (
       <span className="porfolio">
-        {this.state.width < 1309 ? (
+        {this.state.width < 700 ? (
           <div
             style={{
               color: "black",

@@ -35,15 +35,14 @@ export default class TopbarPortfolio extends Component {
   render() {
     return (
       <header>
-        <div id="port--head">
+        <div className="portBar">
           <nav id="port--button">
-            <a onClick={this.openNav}>
-              Portfolio
-              <InlineSVG
-                className={`${this.state.submenuVisible ? "opened" : ""}`}
-                src={arrowDown}
-              />
-            </a>
+            <a onClick={this.openNav}>Portfolio</a>
+            <InlineSVG
+              id="testttt"
+              className={`${this.state.submenuVisible ? "opened" : ""}`}
+              src={arrowDown}
+            />
           </nav>
           <Link id="topPort--logo" to="/">
             <InlineSVG className="header--logo" src={logo} />

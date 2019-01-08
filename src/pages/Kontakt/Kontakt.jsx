@@ -1,8 +1,9 @@
 import React from "react";
 import { Button, Icon, Image } from "semantic-ui-react";
 import { Element, Link } from "react-scroll";
-import logo from "../../logo.svg";
 import uon2x from "../../uon2x.png";
+import InlineSVG from "svg-inline-react";
+import { logo } from "../../assets/svg";
 
 const Kontakt = () => {
   return (
@@ -40,16 +41,9 @@ const Kontakt = () => {
           </Button>
         </div>
       </div>
-      <Image
-        id="kontakt--logo"
-        src={logo}
-        size="small"
-        as={Link}
-        spy={true}
-        smooth={true}
-        duration={500}
-        to="home"
-      />
+      <Link spy={true} smooth={true} duration={500} to="home">
+        <InlineSVG id="kontakt--logo" src={logo} />
+      </Link>
       <div id="kontakt--footer">
         <div id="kontakt--copy">Copyright by Jelena Mišković </div>
         <p id="kontakt--devby">Developed by</p>

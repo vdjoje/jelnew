@@ -68,6 +68,15 @@
 #res--logo {
   width: 35px;
   height: 35px;
+  svg {
+    path {
+    }
+  }
+  &:hover {
+    path {
+      fill: white;
+    }
+  }
 }
 
 #res--grayLogo {

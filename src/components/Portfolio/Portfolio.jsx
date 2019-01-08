@@ -40,7 +40,19 @@ export default class Portfolio extends Component {
   render() {
     return (
       <span className="porfolio">
-        {this.state.width < 700 ? null : (
+        {this.state.width < 1309 ? (
+          <div
+            style={{
+              color: "black",
+              position: "absolute",
+              top: "0px",
+              left: "0px",
+              background: "red"
+            }}
+          >
+            testtt
+          </div>
+        ) : (
           <TopbarPortfolio
             size={{ width: this.state.width, height: this.state.height }}
           />

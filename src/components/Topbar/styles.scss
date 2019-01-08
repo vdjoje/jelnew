@@ -92,6 +92,13 @@ header {
       svg {
         width: 40px;
         height: 40px;
+        path {
+        }
+        &:hover {
+          path {
+            fill: white;
+          }
+        }
       }
     }
     nav {
@@ -104,15 +111,18 @@ header {
         font-size: 16px;
         letter-spacing: 1.5px;
         cursor: pointer;
-
+        &:hover {
+          color: $gold;
+        }
         i {
           width: 10px;
           height: 10px;
           svg {
             transition: transform 0.2s linear;
             fill: $gold;
-            width: inherit;
-            height: inherit;
+            // background: brown;
+            width: 15px;
+            height: 15px;
           }
         }
         &:last-child {

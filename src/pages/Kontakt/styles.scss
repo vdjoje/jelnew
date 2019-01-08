@@ -87,6 +87,15 @@ span {
     left: 75vw;
     top: 100px;
     cursor: pointer;
+    svg {
+      width: 140px;
+      height: 140px;
+      &:hover {
+        path {
+          fill: black;
+        }
+      }
+    }
   }
   #kontakt--copy {
     width: 300px;
@@ -143,18 +152,22 @@ span {
       width: 7%;
       left: 60vw;
       top: 180px;
+      svg {
+        width: 100px;
+        height: 100px;
+      }
     }
     #kontakt--copy {
-      top: 540px;
+      top: 480px;
       left: 2vw;
     }
     #kontakt--devby {
-      top: 500px;
+      top: 455px;
       left: 86vw;
     }
     #kontakt--uon {
-      top: 530px;
-      left: 87vw;
+      top: 485px;
+      left: 94vw;
     }
   }
 }
@@ -165,6 +178,18 @@ span {
       width: 1280px;
       top: 4300px;
       padding-bottom: 0px;
+    }
+    #kontakt--copy {
+      top: 470px;
+      left: 2vw;
+    }
+    #kontakt--devby {
+      top: 445px;
+      left: 86vw;
+    }
+    #kontakt--uon {
+      top: 473px;
+      left: 94vw;
     }
   }
 }
@@ -186,20 +211,24 @@ span {
       left: 35vw;
     }
     #kontakt--logo {
-      top: 140px;
+      top: 120px;
       left: 80vw;
+      svg {
+        width: 80px;
+        height: 80px;
+      }
     }
 
     #kontakt--copy {
-      top: 410px;
+      top: 350px;
     }
     #kontakt--devby {
       left: 78vw;
-      top: 380px;
+      top: 320px;
     }
     #kontakt--uon {
-      top: 410px;
-      left: 84vw;
+      top: 350px;
+      left: 91vw;
     }
   }
 }

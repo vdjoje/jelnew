@@ -38,6 +38,16 @@ export default class Portfolio extends Component {
   }
 
   render() {
+    // if (this.state.width < 700) {
+    //   this.setState({
+    //     columns: 1
+    //   });
+    // } else {
+    //   this.setState({
+    //     columns: 2
+    //   });
+    // }
+
     return (
       <span className="porfolio">
         {this.state.width < 700 ? (

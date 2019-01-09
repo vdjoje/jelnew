@@ -39,14 +39,16 @@
       width: 300px;
       position: relative;
       float: right;
-      right: 200px;
+      // right: 200px;
+      left: -196px;
       padding-top: 80px;
     }
     & p {
       margin-top: 120px;
       position: absolute;
       top: 200px;
-      right: 294px;
+      // right: 294px;
+      left: 1230px;
       width: 400px;
       font-family: $Montserat;
       font-size: 18px;
@@ -56,7 +58,8 @@
     }
     & h2 {
       position: absolute;
-      right: 634px;
+      // right: 634px;
+      left: 1230px;
       font-family: $Montserat;
       font-size: 45px;
       font-weight: bold;
@@ -87,17 +90,20 @@
       }
       & h3 {
         font-size: 20px;
-        right: 80px;
+        // right: 80px;
+        left: -72px;
       }
       & p {
         width: 300px;
         font-size: 14px;
-        right: 215px;
+        // right: 215px;
+        left: 856px;
         margin-top: 80px;
       }
       & h2 {
         font-size: 30px;
-        right: 481px;
+        // right: 481px;
+        left: 856px;
       }
       & h4 {
         font-size: 14px;
@@ -119,16 +125,19 @@
         }
       }
       & h3 {
-        right: 60px;
+        // right: 60px;
+        left: -52px;
       }
       & p {
+        left: 798px;
         width: 300px;
-        right: 185px;
+        // right: 185px;
         margin-top: 80px;
       }
       & h2 {
         font-size: 30px;
-        right: 451px;
+        // right: 451px;
+        left: 798px;
       }
       & h4 {
         left: 798px;
@@ -136,6 +145,78 @@
       }
     }
     #backButton {
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .porfolio {
+    // margin-top: 0px;
+    .portfolio--gallery {
+      .portfolio--frame {
+        .portfolio--images {
+        }
+      }
+      & h3 {
+        // right: 60px;
+        // position: absolute;
+        left: -51px;
+      }
+      & p {
+        width: 300px;
+        left: 370px;
+        // right: 185px;
+        margin-top: 250px;
+      }
+      & h2 {
+        font-size: 30px;
+        // right: 451px;
+        left: 370px;
+      }
+      & h4 {
+        left: 370px;
+        padding-top: 190px;
+      }
+    }
+    #backButton {
+      right: 50px;
+      top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .porfolio {
+    // margin-top: 0px;
+    .portfolio--gallery {
+      .portfolio--frame {
+        .portfolio--images {
+        }
+      }
+      & h3 {
+        // right: 60px;
+        position: absolute;
+        left: -51px;
+      }
+      & p {
+        width: 300px;
+        left: 370px;
+        // right: 185px;
+        margin-top: 250px;
+      }
+      & h2 {
+        font-size: 30px;
+        // right: 451px;
+        left: 370px;
+      }
+      & h4 {
+        left: 370px;
+        padding-top: 190px;
+      }
+    }
+    #backButton {
+      right: 50px;
+      top: 50px;
     }
   }
 }

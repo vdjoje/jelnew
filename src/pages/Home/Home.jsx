@@ -57,19 +57,32 @@ class Home extends Component {
         )}
 
         <TriangleBack />
-        <Element name="home">
-          <Image id="homeStart--image" src={back} />
-          <div className="homeStart--naslov">
-            <p>Arhitektura… Dizajn… Kreacija… Umjetnost… Enterijer…</p>
-            <h3>“An interior is the Natural projection of the soul”</h3>
-            <h5>(Coco Chanel)</h5>
-          </div>
-        </Element>
-        <Usluge />
-        <PortfolioHome />
-        <Image id="homeStart--small" src={backSmall} />
-        <Omeni />
-        <Kontakt />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-beetwen",
+            alignItems: "flex-start"
+          }}
+        >
+          <Element name="home">
+            <Image id="homeStart--image" src={back} />
+            <div className="homeStart--naslov">
+              <p>Arhitektura…</p>
+              <p>Dizajn…</p>
+              <p>Kreacija…</p>
+              <p> Umjetnost…</p>
+              <p> Enterijer…</p>
+              <h3>“An interior is the Natural projection of the soul”</h3>
+              <h5>(Coco Chanel)</h5>
+            </div>
+          </Element>
+          <Usluge />
+          <PortfolioHome />
+          <Image id="homeStart--small" src={backSmall} />
+          <Omeni />
+          <Kontakt />
+        </div>
       </span>
     );
   }

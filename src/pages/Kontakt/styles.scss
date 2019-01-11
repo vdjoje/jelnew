@@ -2,8 +2,9 @@ span {
   .kontakt {
     z-index: 99;
     position: relative;
-    width: 1920px;
-    top: 5950px;
+    // width: 1920px;
+    // top: 5950px;
+    padding-top: 500px;
   }
   .kontakt--naslov {
     color: black;
@@ -16,50 +17,94 @@ span {
     letter-spacing: normal;
     text-align: left;
     text-transform: uppercase;
-    position: absolute;
-    left: 70px;
+    padding-left: 5vw;
+    // position: absolute;
+    // left: 70px;
   }
-  .kontakt--ime {
-    width: 400px;
-    height: auto;
-    padding-right: 0px;
-    font-family: $Playful;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    position: relative;
-    top: 347px;
-    left: 215px;
-    padding: 0px;
-    margin-right: 0px;
-    & p {
-      text-transform: capitalize;
-      color: black;
+  .kontakt--content {
+    @include flex(row, space-between, center);
+    margin-top: 150px;
+    margin-left: 15vw;
+    margin-right: 25vw;
+    .kontakt--ime {
+      width: 400px;
+      height: auto;
+      padding-right: 0px;
+      font-family: $Playful;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: left;
+      // position: relative;
+      // top: 347px;
+      // left: 215px;
+      padding: 0px;
+      margin-right: 0px;
+      & p {
+        text-transform: capitalize;
+        color: black;
+        font-size: 40px;
+        &::first-letter {
+          color: $gold;
+        }
+      }
+    }
+
+    .kontakt--info {
+      @include flex(column, left, left);
+      font-family: $Playful;
       font-size: 25px;
-      &::first-letter {
+      font-weight: bold;
+      line-height: 2;
+      text-align: left;
+      // position: relative;
+      // top: 220px;
+      // left: 747px;
+      & a {
         color: $gold;
+        &:hover {
+          color: black;
+        }
+      }
+      .kontakt--social {
+        @include flex(row, flex-start, center);
+        padding-top: 25px;
       }
     }
   }
 
-  .kontakt--info {
-    @include flex(column, left, left);
-    font-family: $Playful;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 2;
-    text-align: left;
-    position: relative;
-    top: 220px;
-    left: 747px;
-    & a {
-      color: $gold;
-      &:hover {
+  .kontakt--footer {
+    width: 100vw;
+    margin-top: 300px;
+    @include flex(row, space-between, center);
+
+    .kontakt--footLogo {
+      @include flex(row, center);
+      // flex-basis: 25%;
+      .kontakt--devby {
+        padding-right: 1vw;
         color: black;
+        font-size: 15px;
+        font-family: $Playful;
+        font-weight: normal;
+        text-transform: capitalize;
       }
+      #kontakt--uon {
+        padding-right: 1vw;
+      }
+    }
+    .kontakt--copy {
+      padding-left: 1vw;
+      width: 300px;
+      font-family: $Playful;
+      letter-spacing: 1px;
+      font-size: 15px;
+      // position: absolute;
+      // top: 400px;
+      // left: 1.5vw;
+      color: white;
     }
   }
 
@@ -68,24 +113,25 @@ span {
     padding: 0;
     background: transparent;
     color: $gold;
-    position: absolute;
+    // position: absolute;
   }
   #kontakt--insta {
     margin: 0;
     padding: 0;
     background: transparent;
     color: $gold;
-    position: absolute;
-    left: 50px;
+    // position: absolute;
+    // left: 50px;
   }
   #kontakt--face:hover,
   #kontakt--insta:hover {
     color: black;
   }
   #kontakt--logo {
-    position: relative;
-    left: 75vw;
-    top: 100px;
+    // position: relative;
+    // left: 75vw;
+    // top: 100px;
+    padding-left: 15vw;
     cursor: pointer;
     svg {
       width: 140px;
@@ -96,32 +142,6 @@ span {
         }
       }
     }
-  }
-  #kontakt--copy {
-    width: 300px;
-    font-family: $Playful;
-    letter-spacing: 1px;
-    font-size: 15px;
-    position: absolute;
-    font-weight: normal;
-    top: 400px;
-    left: 1.5vw;
-    color: white;
-  }
-  #kontakt--devby {
-    min-width: 300px;
-    color: black;
-    font-size: 15px;
-    font-family: $Playful;
-    position: absolute;
-    font-weight: normal;
-    text-transform: capitalize;
-    top: 370px;
-    left: 89vw;
-  }
-  #kontakt--uon {
-    top: 400px;
-    left: 95vw;
   }
 }
 

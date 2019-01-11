@@ -1,164 +1,186 @@
-span {
-  .usluge {
-    height: 100vh;
-    position: absolute;
-    z-index: 1;
-    top: 1010px;
-  }
-  .usluge--one {
-    width: 298px;
-    height: 146px;
-    font-family: $Playful;
-    font-size: 200px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.8;
-    letter-spacing: 6px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 70px;
-    top: 100px;
-  }
+.usluge {
+  // height: 100vh;
+  position: relative;
+  z-index: 1;
+  // top: 1010px;
+  flex-basis: 100%;
+  padding-top: 100px;
+}
+.usluge--one {
+  // width: 298px;
+  // height: 146px;
+  flex-basis: 30%;
+  font-family: $Playful;
+  font-size: 200px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 6px;
+  text-align: left;
+  color: white;
+  align-self: flex-start;
+  // position: absolute;
+  // left: 70px;
+  // top: 100px;
+  padding-left: 5vw;
+}
 
-  .usluge--two {
-    width: 149px;
-    height: 73px;
-    font-family: $Playful;
-    font-size: 100px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.8;
-    letter-spacing: 3px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 46vw;
-    top: 400px;
-  }
+.usluge--two {
+  // width: 149px;
+  // height: 73px;
+  font-family: $Playful;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 3px;
+  text-align: left;
+  color: white;
+  // position: absolute;
+  // left: 46vw;
+  // top: 400px;
+  padding-bottom: 50px;
+  align-self: center;
+}
 
-  .usluge--three {
-    width: 517px;
-    height: 535px;
-    font-family: $Playful;
-    font-size: 200px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.8;
-    letter-spacing: 6px;
-    text-align: left;
-    color: black;
-    position: absolute;
-    left: 1335px;
-    top: 395px;
-  }
+.usluge--three {
+  // width: 517px;
+  // height: 535px;
+  flex-basis: 30%;
+  font-family: $Playful;
+  font-size: 200px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 6px;
+  text-align: left;
+  color: black;
+  padding-top: 250px;
+  // align-self: flex-end;
+  // position: absolute;
+  // left: 1335px;
+  // top: 395px;
+}
 
-  .usluge--naslov {
-    width: 700px;
-    height: 41px;
-    font-family: $Playful;
-    font-size: 40px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.88;
-    letter-spacing: 1.2px;
-    text-align: center;
-    color: black;
-    position: absolute;
-    left: 130px;
-    top: 1100px;
-  }
+.usluge--naslov {
+  width: 700px;
+  height: 41px;
+  font-family: $Playful;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: black;
+  // position: absolute;
+  // left: 130px;
+  // top: 1100px;
+  padding-top: 300px;
+  padding-left: 5vw;
+}
 
-  .usluge--nav {
-    width: 600px;
-    height: 25px;
-    font-family: $Playful;
+.usluge--nav {
+  width: 600px;
+  height: 25px;
+  margin-left: 7vw;
+  padding-top: 80px;
+  font-family: $Playful;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.3;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: black;
+  // position: absolute;
+  // left: 215px;
+  // top: 1200px;
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 0px;
+  & li::before {
+    color: $gold;
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
+
+.usluge--naslovtwo {
+  // width: 470px;
+  // height: 195px;
+  flex-basis: 30%;
+  font-family: $Playful;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: 1.2px;
+  // text-align: left;
+  color: white;
+  // position: absolute;
+  // left: 215px;
+  // top: 2100px;
+  align-self: center;
+  // flex-basis: 30%;
+}
+
+.usluge--podnas {
+  width: 500px;
+  // flex-basis: 25%;
+  height: 140px;
+  font-family: $Playful;
+  font-size: 35px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: white;
+
+  // position: absolute;
+  // left: 1050px;
+  // top: 1700px;
+}
+
+.usluge--navtwo {
+  width: 700px;
+  padding-top: 100px;
+  font-family: $Playful;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: white;
+  // position: absolute;
+  // left: 1050px;
+  // top: 2020px;
+  & li {
+    padding-bottom: 100px;
     font-size: 25px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.3;
-    letter-spacing: 0.8px;
-    text-align: left;
-    color: black;
-    position: absolute;
-    left: 215px;
-    top: 1200px;
-    list-style-type: none;
-    counter-reset: item;
-    padding-left: 0px;
-    & li::before {
-      color: $gold;
-      content: "\2022";
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
+    list-style: none;
   }
-
-  .usluge--naslovtwo {
-    width: 470px;
-    height: 195px;
-    font-family: $Playful;
-    font-size: 30px;
+  & li::before {
+    color: $gold;
+    content: "\2022";
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.38;
-    letter-spacing: 1.2px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 215px;
-    top: 2100px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
+}
 
-  .usluge--podnas {
-    width: 500px;
-    height: 140px;
-    font-family: $Playful;
-    font-size: 35px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.38;
-    letter-spacing: 1.2px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 1050px;
-    top: 1700px;
-  }
-
-  .usluge--navtwo {
-    min-width: 700px;
-    font-family: $Playful;
-    line-height: 1;
-    letter-spacing: 0.6px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 1050px;
-    top: 2020px;
-    & li {
-      padding-bottom: 40px;
-      font-size: 25px;
-      list-style: none;
-    }
-    & li::before {
-      color: $gold;
-      content: "\2022";
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-  }
+#usluge--aktivnosti {
+  // align-self: center;
 }
 
 @media only screen and (max-width: 1366px) {

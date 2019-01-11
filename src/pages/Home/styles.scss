@@ -1,39 +1,43 @@
-span {
-  #homeStart--image {
-    position: relative;
-    z-index: -2;
-    top: -90px;
-    left: 0px;
-    height: 50%;
-  }
-  #homeStart--small {
-    z-index: -3;
-    top: 3420px;
-    width: 1400px;
-    float: right;
-  }
-  .homeStart--naslov {
-    position: absolute;
-    margin: 3%;
+#homeStart--image {
+  position: absolute;
+  z-index: -2;
+  right: 0px;
+  // height: calc(100vh - 70px);
+  height: 1010px;
+}
+#homeStart--small {
+  // position: static;
+  align-self: flex-end;
+  z-index: -3;
+  // padding-top: 875px;
+  top: 875px;
+  // right: 0px;
+  width: 1400px;
+  // float: right;
+}
+.homeStart--naslov {
+  @include flex(column, center, flex-start);
+  // position: absolute;
+  // margin: 3%;
+  color: white;
+  font-family: $Playful;
+  font-size: 60px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  // top: -1080px;
+  // left: 100px;
+  padding-top: 250px;
+  padding-left: 5vw;
+  & p {
     color: white;
-    font-family: $Playful;
-    font-size: 60px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.43;
-    top: 250px;
-    left: 100px;
-    width: 40vh;
-    & p {
-      color: white;
-    }
-    & h3 {
-      margin-top: 100px;
-      font-family: $Montserat;
-      color: white;
-      width: 80vw;
-    }
+  }
+  & h3 {
+    margin-top: 100px;
+    font-family: $Montserat;
+    color: white;
+    width: 80vw;
   }
 }
 

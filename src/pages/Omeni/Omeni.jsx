@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 
 const Omeni = () => {
   return (
-    <span className="omeni">
+    <div className="omeni">
       <Element name="omeni">
         <p className="omeni--naslov">o meni</p>
       </Element>
@@ -47,7 +47,7 @@ const Omeni = () => {
         slikarstvom. Raduje me sto kroz svoje radove, svoj umjetnicki dar mogu
         da udahnem u živote drugih.
       </p>
-    </span>
+    </div>
   );
 };
 

@@ -7,54 +7,58 @@ import { logo } from "../../assets/svg";
 
 const Kontakt = () => {
   return (
-    <span className="kontakt">
+    <div className="kontakt">
       <Element name="kontakt">
         <p className="kontakt--naslov">KONTAKT</p>
       </Element>
-      <div className="kontakt--ime">
-        <p>jelena</p>
-        <p>mišković</p>
+      <div className="kontakt--content">
+        <div className="kontakt--ime">
+          <p>jelena</p>
+          <p>mišković</p>
+        </div>
+        <div className="kontakt--info">
+          <a href="tel:382-67-254-844">+382 67 / 254 - 844</a>
+          <a
+            // className="kontakt--email"
+            title="My email"
+            href="mailto:arhmiskovic@gmail.com"
+          >
+            arhmiskovic@gmail.com
+          </a>
+          <div className="kontakt--social">
+            <Button
+              id="kontakt--face"
+              href="https://www.facebook.com/jelena.miskovic.50"
+              target="_blank"
+            >
+              <Icon size="big" name="facebook f" />
+            </Button>
+            <Button
+              id="kontakt--insta"
+              href="https://www.instagram.com/ena_jel/"
+              target="_blank"
+            >
+              <Icon size="big" name="instagram" />
+            </Button>
+          </div>
+        </div>
+        <Link spy={true} smooth={true} duration={500} to="home">
+          <InlineSVG id="kontakt--logo" src={logo} />
+        </Link>
       </div>
-      <div className="kontakt--info">
-        <a href="tel:382-67-254-844">+382 67 / 254 - 844</a>
-        <a
-          // className="kontakt--email"
-          title="My email"
-          href="mailto:arhmiskovic@gmail.com"
-        >
-          arhmiskovic@gmail.com
-        </a>
-        <div style={{ marginTop: "20px" }}>
-          <Button
-            id="kontakt--face"
-            href="https://www.facebook.com/jelena.miskovic.50"
+      <div className="kontakt--footer">
+        <div className="kontakt--copy">Copyright by Jelena Mišković </div>
+        <div className="kontakt--footLogo">
+          <p className="kontakt--devby">Developed by</p>
+          <Image
+            id="kontakt--uon"
+            href="https://uon.rs/"
             target="_blank"
-          >
-            <Icon size="big" name="facebook f" />
-          </Button>
-          <Button
-            id="kontakt--insta"
-            href="https://www.instagram.com/ena_jel/"
-            target="_blank"
-          >
-            <Icon size="big" name="instagram" />
-          </Button>
+            src={uon2x}
+          />
         </div>
       </div>
-      <Link spy={true} smooth={true} duration={500} to="home">
-        <InlineSVG id="kontakt--logo" src={logo} />
-      </Link>
-      <div id="kontakt--footer">
-        <div id="kontakt--copy">Copyright by Jelena Mišković </div>
-        <p id="kontakt--devby">Developed by</p>
-        <Image
-          id="kontakt--uon"
-          href="https://uon.rs/"
-          target="_blank"
-          src={uon2x}
-        />
-      </div>
-    </span>
+    </div>
   );
 };
 

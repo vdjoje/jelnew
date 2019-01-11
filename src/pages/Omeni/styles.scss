@@ -1,124 +1,133 @@
-span {
-  .omeni {
-    position: absolute;
-    z-index: 1;
-    top: 4770px;
-  }
-  .omeni--naslov {
-    color: white;
-    position: relative;
-    left: 70px;
-    width: 768px;
-    height: 146px;
-    font-family: $Playful;
-    font-size: 200px;
+.omeni {
+  // position: relative;
+  z-index: 1;
+  // top: 4770px;
+  // background: yellow;
+  // flex-basis: 100vw;
+  // display: none;
+  padding-top: 200px;
+  @include flex(column, space-between, center);
+  // flex-basis: 100vw;
+  width: 90vw;
+  padding-left: 5vw;
+}
+.omeni--naslov {
+  color: white;
+  align-self: flex-start;
+  // position: relative;
+  // left: 70px;
+  width: 100vw;
+  padding-left: 7vw;
+  font-family: $Playful;
+  font-size: 200px;
+  font-weight: bold;
+  line-height: 1.17;
+  text-align: left;
+  text-transform: uppercase;
+}
+.omeni--one {
+  align-self: flex-start;
+  width: 735px;
+  height: auto;
+  font-family: $Playful;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: white;
+  margin-top: 150px;
+  // position: absolute;
+  // left: 70px;
+  // top: 350px;
+  border-left: 2px solid $gold;
+  padding-left: 30px;
+  &::first-letter {
+    font-size: 50px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.17;
-    letter-spacing: normal;
-    text-align: left;
-    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: $gold;
   }
-  .omeni--one {
-    width: 735px;
-    height: auto;
-    font-family: $Playful;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.6;
-    letter-spacing: 0.8px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 70px;
-    top: 350px;
-    border-left: 2px solid $gold;
-    padding-left: 30px;
-    &::first-letter {
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      line-height: 1;
-      color: $gold;
-    }
+}
+.omeni--two {
+  align-self: flex-end;
+  width: 735px;
+  height: auto;
+  font-family: $Playful;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: white;
+  margin-top: 100px;
+  // position: absolute;
+  // left: 960px;
+  // top: 740px;
+  border-left: 2px solid $gold;
+  padding-left: 30px;
+  &::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: $gold;
   }
-  .omeni--two {
-    width: 735px;
-    height: auto;
-    font-family: $Playful;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.6;
-    letter-spacing: 0.8px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 960px;
-    top: 740px;
-    border-left: 2px solid $gold;
-    padding-left: 30px;
-    &::first-letter {
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      line-height: 1;
-      color: $gold;
-    }
+}
+.omeni--three {
+  align-self: flex-start;
+  width: 735px;
+  height: auto;
+  font-family: $Playful;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: white;
+  // position: absolute;
+  left: 70px;
+  top: 1170px;
+  border-left: 2px solid $gold;
+  padding-left: 30px;
+  margin-top: 100px;
+  &::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: $gold;
   }
-  .omeni--three {
-    width: 735px;
-    height: auto;
-    font-family: $Playful;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.6;
-    letter-spacing: 0.8px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 70px;
-    top: 1170px;
-    border-left: 2px solid $gold;
-    padding-left: 30px;
-    &::first-letter {
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      line-height: 1;
-      color: $gold;
-    }
-  }
-  .omeni--four {
-    width: 735px;
-    height: auto;
-    font-family: $Playful;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.6;
-    letter-spacing: 0.8px;
-    text-align: left;
-    color: white;
-    position: absolute;
-    left: 960px;
-    top: 1700px;
-    border-left: 2px solid $gold;
-    padding-left: 30px;
-    &::first-letter {
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      line-height: 1;
-      color: $gold;
-    }
+}
+.omeni--four {
+  align-self: flex-end;
+  width: 735px;
+  height: auto;
+  font-family: $Playful;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: white;
+  margin-top: 100px;
+  // position: absolute;
+  // left: 960px;
+  // top: 1700px;
+  border-left: 2px solid $gold;
+  padding-left: 30px;
+  &::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: $gold;
   }
 }
 

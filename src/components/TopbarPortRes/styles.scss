@@ -1,0 +1,93 @@
+.portfRes {
+  position: absolute;
+  width: 100vw;
+  height: 70px;
+  background: black;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  .res--submenu {
+    position: absolute;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    top: 70px;
+    z-index: 99;
+
+    .res--subnav {
+      padding-left: 8vw;
+      width: 100vw;
+      padding-top: 20px;
+      ol {
+        width: 84vw;
+        height: auto;
+        padding-left: inherit;
+        border-right: 2px solid $gold;
+        li {
+          font-family: $Playful;
+          color: $gold;
+          font-size: 18px;
+          align-items: top;
+          padding: 10px;
+          font-weight: bold;
+          a {
+            margin-bottom: 20px;
+            font-family: $Playful;
+            font-size: 14px;
+            color: white;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+#portfRes--button {
+  @include flex(row, center, center);
+  position: absolute;
+  width: 100vw;
+  height: 70px;
+  left: 0px;
+  top: 0px;
+  font-family: $Playful;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.6px;
+  color: white;
+  a {
+    color: $gold;
+    cursor: pointer;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+#portfRes-arrow {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 2px;
+  @include flex(column, center, center);
+}
+
+#topPort--logo {
+  position: absolute;
+  left: 10vw;
+  top: 20px;
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  svg {
+    path {
+    }
+    &:hover {
+      path {
+        fill: white;
+      }
+    }
+  }
+}

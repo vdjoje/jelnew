@@ -236,7 +236,7 @@ span {
 @media only screen and (max-width: 360px) {
   span {
     .kontakt {
-      top: 3550px;
+      top: 3300px;
       left: 12px;
       height: 250px;
     }
@@ -269,7 +269,7 @@ span {
     }
     #kontakt--logo {
       top: -305px;
-      left: 280px;
+      left: 235px;
     }
     #kontakt--footer {
       width: 360px;
@@ -300,7 +300,7 @@ span {
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   span {
     .kontakt--naslov {
       top: -20px;
@@ -314,7 +314,10 @@ span {
       left: 240px;
     }
     #kontakt--logo {
-      left: 260px;
+      left: 225px;
+      svg {
+        transform: scale(0.7, 0.7);
+      }
     }
     #kontakt--footer {
       width: 100vw;

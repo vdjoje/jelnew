@@ -52,13 +52,7 @@ export default class TopbarRes extends Component {
             >
               <a>Usluge</a>
             </Link>
-            <a onClick={this.openNav}>
-              Portfolio
-              <InlineSVG
-                className="testts"
-                // src={arrowDown}
-              />
-            </a>
+            <a onClick={this.openNav}>Portfolio</a>
             <Link
               onClick={this.closeMenu}
               to="omeni"

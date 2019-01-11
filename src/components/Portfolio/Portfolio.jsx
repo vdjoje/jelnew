@@ -3,6 +3,7 @@ import { Icon, Button } from "semantic-ui-react";
 import Galerija from "./Galerija";
 import { Link } from "react-router-dom";
 import TopbarPortfolio from "../TopbarPortfolio";
+import TopbarPortRes from "../TopbarPortRes";
 
 export default class Portfolio extends Component {
   constructor() {
@@ -38,29 +39,21 @@ export default class Portfolio extends Component {
   }
 
   render() {
-    // if (this.state.width < 700) {
-    //   this.setState({
-    //     columns: 1
-    //   });
-    // } else {
-    //   this.setState({
-    //     columns: 2
-    //   });
-    // }
-
     return (
       <span className="porfolio">
         {this.state.width < 700 ? (
           <div
             style={{
-              color: "black",
               position: "absolute",
-              top: "0px",
+              top: "-70px",
               left: "0px",
-              background: "red"
+              width: "100vw",
+              height: "70px"
             }}
           >
-            testtt
+            <TopbarPortRes
+              size={{ width: this.state.width, height: this.state.height }}
+            />
           </div>
         ) : (
           <TopbarPortfolio
@@ -77,10 +70,14 @@ export default class Portfolio extends Component {
             <p>{this.props.text}</p>
             <h4>{this.props.position}</h4>
             <div className="portfolio--images">
-              <Galerija
-                columns={this.state.columns}
-                photos={this.props.pictures}
-              />
+              {this.state.width < 700 ? (
+                <Galerija columns={1} photos={this.props.pictures} />
+              ) : (
+                <Galerija
+                  columns={this.state.columns}
+                  photos={this.props.pictures}
+                />
+              )}
             </div>
           </div>
         </div>

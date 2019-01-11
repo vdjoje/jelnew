@@ -1,7 +1,7 @@
 span {
   position: absolute;
   .portfolioHome {
-    @include flex(row, space-between);
+    @include flex(row, space-between, center);
     // position: relative;
     top: 3838px;
     left: 0px;
@@ -37,6 +37,11 @@ span {
         letter-spacing: 0.5px;
         width: 100%;
       }
+      h4 {
+        font-family: $Montserat;
+        font-weight: bold;
+        margin-top: 40px;
+      }
     }
   }
 }
@@ -61,6 +66,9 @@ span {
         & p {
           font-size: 15px;
         }
+        & h4 {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -79,11 +87,11 @@ span {
   span {
     .portfolioHome {
       @include flex(column, space-between, center);
-      height: 1250px;
+      height: 1010px;
       top: 1260px;
       .portfolioHome--card {
         width: 84%;
-        margin-top: 40px;
+        margin-top: 10px;
         border-left: 0px;
         padding-left: 0%;
         & h3 {
@@ -96,6 +104,10 @@ span {
         & p {
           margin-top: 0px;
           font-size: 10px;
+        }
+        & h4 {
+          font-size: 12px;
+          margin-bottom: 10px;
         }
       }
     }

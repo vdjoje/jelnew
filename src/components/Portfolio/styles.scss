@@ -181,6 +181,7 @@
     #backButton {
       right: 50px;
       top: 50px;
+      z-index: 99;
     }
   }
 }
@@ -189,34 +190,46 @@
   .porfolio {
     // margin-top: 0px;
     .portfolio--gallery {
+      height: 1120px;
+      @include flex(column, space-between);
       .portfolio--frame {
         .portfolio--images {
+          position: absolute;
+          top: 350px;
+          width: 85vw;
         }
       }
       & h3 {
-        // right: 60px;
         position: absolute;
-        left: -51px;
+        left: 40px;
+        font-size: 16px;
+        width: 80%;
+        top: 0px;
+        font-weight: bold;
       }
+
       & p {
-        width: 300px;
-        left: 370px;
-        // right: 185px;
-        margin-top: 250px;
+        width: 80%;
+        left: 40px;
+        margin-top: 0px;
+        top: 100px;
+        font-size: 12px;
       }
       & h2 {
-        font-size: 30px;
-        // right: 451px;
-        left: 370px;
+        font-size: 15px;
+        left: 40px;
+        top: 40px;
       }
       & h4 {
-        left: 370px;
-        padding-top: 190px;
+        left: 40px;
+        // padding-top: 50px;
+        top: 100px;
       }
     }
     #backButton {
-      right: 50px;
-      top: 50px;
+      transform: scale(0.6, 0.6);
+      right: -10px;
+      top: 20px;
     }
   }
 }
@@ -225,63 +238,12 @@
   .porfolio {
     // margin-top: 0px;
     .portfolio--gallery {
-      height: 1200px;
-      .portfolio--frame {
-        width: 100vw;
-        margin-left: 0vw;
-        border-left: 0px;
-        border-right: 0px;
-        .portfolio--images {
-          @include flex(column, center);
-          position: absolute;
-          padding-left: 3vw;
-          width: 96vw;
-          padding-right: 0vw;
-          top: 350px;
-        }
-      }
-      & h3 {
-        position: absolute;
-        font-size: 15px;
-        font-weight: bold;
-        line-height: 1.4;
-        letter-spacing: 0.9px;
-        width: 250px;
-        right: 50px;
-        // left: 0px;
-        padding-top: 0px;
-        top: 120px;
-        z-index: 100;
-      }
-      & p {
-        margin-top: 120px;
-        top: 55px;
-        right: 28px;
-        width: 270px;
-        font-size: 12px;
-        line-height: 1.94;
-        letter-spacing: 0.5px;
-        padding-top: 0px;
-      }
-      & h2 {
-        width: 100vw;
-        right: 40vw;
-        font-size: 20px;
-        top: 80px;
-      }
-      & h4 {
-        font-size: 14px;
-        padding-top: 90px;
-        line-height: 1.94;
-        left: 20px;
-        top: 210px;
-      }
+      height: 1000px;
     }
     #backButton {
-      right: 10px;
-      top: 0px;
-      width: 10px;
-      height: 10px;
+      transform: scale(0.6, 0.6);
+      right: -10px;
+      top: 20px;
     }
   }
 }

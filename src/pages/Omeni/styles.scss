@@ -248,7 +248,7 @@ span {
 @media only screen and (max-width: 360px) {
   span {
     .omeni {
-      top: 2702px;
+      top: 2452px;
       height: 1030px;
       width: 360px;
       background-color: black;
@@ -314,9 +314,10 @@ span {
 @media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   span {
     .omeni {
-      top: 2699px;
+      top: 2449px;
       height: 1033px;
       width: 100vw;
+      filter: $filter;
     }
     .omeni--naslov {
     }

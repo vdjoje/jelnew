@@ -12,34 +12,25 @@ const PortfolioHome = () => {
         <Image src={sl1} as={Link} to="/ambasada" />
         <h3>Ambasada UAE</h3>
         <p>
-          Lorem ipsum dolor sit amet, quod efficiendi at mel. In vis dico
-          accumsan postulant, in his vocibus periculis argumentum, eos ad graece
-          option patrioque. Novum tempor interesset ut eos. Inermis tractatos ex
-          his, vel in stet aliquam. Cum ex nusquam patrioque maiestatis, sea
-          partem impetus consequuntur ex, no qui numquam facilis.
+          Glavni projekat enterijera Ambasade UAE u Capital Plaza Centru (cca
+          1095m2), Podgorica
         </p>
+        <h4>Saradnik na projektu</h4>
       </div>
       <div className="portfolioHome--card">
         <Image src={sl2} as={Link} to="/benexfitnes" />
         <h3>Benex Fitnes</h3>
         <p>
-          Lorem ipsum dolor sit amet, quod efficiendi at mel. In vis dico
-          accumsan postulant, in his vocibus periculis argumentum, eos ad graece
-          option patrioque. Novum tempor interesset ut eos. Inermis tractatos ex
-          his, vel in stet aliquam. Cum ex nusquam patrioque maiestatis, sea
-          partem impetus consequuntur ex, no qui numquam facilis.
+          Glavni projekat “Benex fitnes centra” (cca 950m2), na Capital Plaza
+          Centru, Podgorica ( saradnik na projektu )
         </p>
+        <h4>Saradnik na projektu</h4>
       </div>
       <div className="portfolioHome--card">
         <Image src={sl3} as={Link} to="/planinski" />
         <h3>Planiski stan</h3>
-        <p>
-          Lorem ipsum dolor sit amet, quod efficiendi at mel. In vis dico
-          accumsan postulant, in his vocibus periculis argumentum, eos ad graece
-          option patrioque. Novum tempor interesset ut eos. Inermis tractatos ex
-          his, vel in stet aliquam. Cum ex nusquam patrioque maiestatis, sea
-          partem impetus consequuntur ex, no qui numquam facilis.
-        </p>
+        <p>"Enterijer planinskog stana"</p>
+        <h4>Autor i koordinator</h4>
       </div>
     </span>
   );

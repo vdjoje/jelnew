@@ -39,6 +39,7 @@ span {
       border-top: 1154px solid $gold;
       border-right: 1920px solid transparent;
       z-index: -1;
+      filter: $filter;
     }
     .backDiv--rb {
       width: 0;
@@ -57,6 +58,7 @@ span {
       border-left: 1920px solid transparent;
       position: absolute;
       z-index: -1;
+      filter: $filter;
     }
     .backDiv--rt {
       width: 0;
@@ -73,6 +75,7 @@ span {
       border-left: 1920px solid transparent;
       position: absolute;
       z-index: -1;
+      filter: $filter;
     }
     .backDiv--para {
       margin-top: 535px;
@@ -90,6 +93,7 @@ span {
       background: $gold;
       z-index: -1;
       position: absolute;
+      filter: $filter;
     }
   }
   .lastDiv {
@@ -112,6 +116,7 @@ span {
       position: absolute;
       top: 670px;
       z-index: -1;
+      filter: $filter;
     }
   }
 }
@@ -360,6 +365,7 @@ span {
         height: 185px;
         background-color: black;
         border: 0px;
+        filter: $filter;
       }
       .backDiv--ltgold {
         display: none;

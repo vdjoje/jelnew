@@ -2,13 +2,7 @@ import React from "react";
 
 const TriangleBack = () => {
   return (
-    <span
-    //   style={{
-    //     position: "absolute",
-    //     top: "70",
-    //     left: "0"
-    //   }}
-    >
+    <span>
       <div className="backDiv">
         <div className="backDiv--lbgold" />
         <div className="backDiv--lb" />

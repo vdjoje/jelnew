@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Image, Button, Icon } from "semantic-ui-react";
-import logoGray from "../../logogray.svg";
+import { Button, Icon } from "semantic-ui-react";
 import { Link } from "react-scroll";
 import InlineSVG from "svg-inline-react";
-import { logo, arrowDown, arrowTest } from "../../assets/svg";
+import { logo, arrowDown } from "../../assets/svg";
 
 export default class Topbar extends Component {
   constructor() {

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Icon } from "semantic-ui-react";
+import { Link } from "react-scroll";
 import InlineSVG from "svg-inline-react";
 import { logo, arrowDown } from "../../assets/svg";
 
@@ -37,7 +38,9 @@ export default class Topbar extends Component {
       <header id="navbar">
         <div className="header--container">
           <nav>
-            <a href="#usluge">Usluge</a>
+            <a onClick={this.closeNav} href="#usluge">
+              Usluge
+            </a>
             <a onClick={this.openNav}>
               Portfolio
               <InlineSVG
@@ -50,8 +53,12 @@ export default class Topbar extends Component {
             <InlineSVG className="header--logo" src={logo} />
           </a>
           <nav>
-            <a href="#omeni">O meni</a>
-            <a href="#kontakt">Kontakt</a>
+            <a onClick={this.closeNav} href="#omeni">
+              O meni
+            </a>
+            <a onClick={this.closeNav} hreh="#kontakt">
+              Kontakt
+            </a>
           </nav>
         </div>
         {this.state.submenuVisible ? (
@@ -84,7 +91,11 @@ export default class Topbar extends Component {
               <div id="header--kontakt">
                 <a href="tel:382-67-254-844">+382 67 / 254 - 844</a>
                 <br />
-                <a title="My email" href="mailto:arhmiskovic@gmail.com">
+                <a
+                  // className="kontakt--email"
+                  title="My email"
+                  href="mailto:arhmiskovic@gmail.com"
+                >
                   arhmiskovic@gmail.com
                 </a>
               </div>

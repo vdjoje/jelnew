@@ -1,80 +1,16 @@
-span {
-  .kontakt {
-    z-index: 99;
-    position: relative;
-    // width: 1920px;
-    // top: 5950px;
-    padding-top: 500px;
-  }
+.kontakt {
+  z-index: 99;
+  padding-top: 26%;
   .kontakt--naslov {
     color: black;
     font-family: $Playful;
     font-size: 200px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 0.9;
-    letter-spacing: normal;
     text-align: left;
     text-transform: uppercase;
     padding-left: 5vw;
-    // position: absolute;
-    // left: 70px;
   }
-  .kontakt--content {
-    @include flex(row, space-between, center);
-    margin-top: 150px;
-    margin-left: 15vw;
-    margin-right: 25vw;
-    .kontakt--ime {
-      width: 400px;
-      height: auto;
-      padding-right: 0px;
-      font-family: $Playful;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1;
-      letter-spacing: normal;
-      text-align: left;
-      // position: relative;
-      // top: 347px;
-      // left: 215px;
-      padding: 0px;
-      margin-right: 0px;
-      & p {
-        text-transform: capitalize;
-        color: black;
-        font-size: 40px;
-        &::first-letter {
-          color: $gold;
-        }
-      }
-    }
-
-    .kontakt--info {
-      @include flex(column, left, left);
-      font-family: $Playful;
-      font-size: 25px;
-      font-weight: bold;
-      line-height: 2;
-      text-align: left;
-      // position: relative;
-      // top: 220px;
-      // left: 747px;
-      & a {
-        color: $gold;
-        &:hover {
-          color: black;
-        }
-      }
-      .kontakt--social {
-        @include flex(row, flex-start, center);
-        padding-top: 25px;
-      }
-    }
-  }
-
   .kontakt--footer {
     width: 100vw;
     margin-top: 300px;
@@ -88,7 +24,6 @@ span {
         color: black;
         font-size: 15px;
         font-family: $Playful;
-        font-weight: normal;
         text-transform: capitalize;
       }
       #kontakt--uon {
@@ -101,44 +36,78 @@ span {
       font-family: $Playful;
       letter-spacing: 1px;
       font-size: 15px;
-      // position: absolute;
-      // top: 400px;
-      // left: 1.5vw;
       color: white;
     }
   }
+  .kontakt--content {
+    @include flex(row, space-between, center);
+    margin-top: 150px;
+    margin-left: 15vw;
+    margin-right: 25vw;
+    .kontakt--ime {
+      width: 400px;
+      height: auto;
+      padding-right: 0px;
+      font-family: $Playful;
+      font-weight: bold;
+      line-height: 1;
+      text-align: left;
+      padding: 0px;
+      margin-right: 0px;
+      & p {
+        text-transform: capitalize;
+        color: black;
+        font-size: 40px;
+        &::first-letter {
+          color: $gold;
+        }
+      }
+    }
+    .kontakt--info {
+      @include flex(column, left, left);
+      font-family: $Playful;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 2;
+      text-align: left;
+      & a {
+        color: $gold;
+        &:hover {
+          color: black;
+        }
+      }
+      .kontakt--social {
+        @include flex(row, flex-start, center);
+        padding-top: 25px;
+      }
+    }
 
-  #kontakt--face {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    color: $gold;
-    // position: absolute;
-  }
-  #kontakt--insta {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    color: $gold;
-    // position: absolute;
-    // left: 50px;
-  }
-  #kontakt--face:hover,
-  #kontakt--insta:hover {
-    color: black;
-  }
-  #kontakt--logo {
-    // position: relative;
-    // left: 75vw;
-    // top: 100px;
-    padding-left: 15vw;
-    cursor: pointer;
-    svg {
-      width: 140px;
-      height: 140px;
-      &:hover {
-        path {
-          fill: black;
+    #kontakt--face {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      color: $gold;
+    }
+    #kontakt--insta {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      color: $gold;
+    }
+    #kontakt--face:hover,
+    #kontakt--insta:hover {
+      color: black;
+    }
+    #kontakt--logo {
+      padding-left: 15vw;
+      cursor: pointer;
+      svg {
+        width: 140px;
+        height: 140px;
+        &:hover {
+          path {
+            fill: black;
+          }
         }
       }
     }
@@ -146,70 +115,100 @@ span {
 }
 
 @media only screen and (max-width: 1366px) {
-  span {
-    .kontakt {
-      width: 1366px;
-      top: 4660px;
-    }
+  .kontakt {
     .kontakt--naslov {
       font-size: 100px;
-      left: 5vw;
-      top: 100px;
-    }
-    .kontakt--ime {
-      font-size: 70px;
-      top: 380px;
-      left: 5vw;
-    }
-    .kontakt--info {
-      @include flex(column, left, left);
-      font-size: 20px;
-      top: 250px;
-      left: 30vw;
-      line-height: 40px;
-    }
-    #kontakt--logo {
-      width: 7%;
-      left: 60vw;
-      top: 180px;
-      svg {
-        width: 100px;
-        height: 100px;
-      }
-    }
-    #kontakt--copy {
-      top: 480px;
-      left: 2vw;
-    }
-    #kontakt--devby {
-      top: 455px;
-      left: 86vw;
-    }
-    #kontakt--uon {
-      top: 485px;
-      left: 94vw;
     }
   }
 }
 
 @media only screen and (max-width: 1280px) {
-  span {
-    .kontakt {
-      width: 1280px;
-      top: 4300px;
-      padding-bottom: 0px;
+  .kontakt {
+    .kontakt--naslov {
     }
-    #kontakt--copy {
-      top: 470px;
-      left: 2vw;
+    .kontakt--footer {
+      .kontakt--footLogo {
+        .kontakt--devby {
+        }
+        #kontakt--uon {
+        }
+      }
+      .kontakt--copy {
+      }
     }
-    #kontakt--devby {
-      top: 445px;
-      left: 86vw;
-    }
-    #kontakt--uon {
-      top: 473px;
-      left: 94vw;
+    .kontakt--content {
+      @include flex(row, space-between, center);
+      width: 80vw;
+      margin-top: 0px;
+      margin-left: 5vw;
+      margin-right: 0vw;
+      .kontakt--ime {
+        width: 400px;
+        height: auto;
+        padding-right: 0px;
+        font-family: $Playful;
+        font-weight: bold;
+        line-height: 1;
+        text-align: left;
+        padding: 0px;
+        margin-right: 0px;
+        & p {
+          text-transform: capitalize;
+          color: black;
+          font-size: 40px;
+          &::first-letter {
+            color: $gold;
+          }
+        }
+      }
+      .kontakt--info {
+        @include flex(column, left, left);
+        font-family: $Playful;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 2;
+        text-align: left;
+        & a {
+          color: $gold;
+          &:hover {
+            color: black;
+          }
+        }
+        .kontakt--social {
+          @include flex(row, flex-start, center);
+          padding-top: 25px;
+        }
+      }
+
+      #kontakt--face {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        color: $gold;
+      }
+      #kontakt--insta {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        color: $gold;
+      }
+      #kontakt--face:hover,
+      #kontakt--insta:hover {
+        color: black;
+      }
+      #kontakt--logo {
+        padding-left: 15vw;
+        cursor: pointer;
+        svg {
+          width: 140px;
+          height: 140px;
+          &:hover {
+            path {
+              fill: black;
+            }
+          }
+        }
+      }
     }
   }
 }

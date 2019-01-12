@@ -55,7 +55,7 @@ export default class Topbar extends Component {
             <a onClick={this.closeNav} href="#omeni">
               O meni
             </a>
-            <a onClick={this.closeNav} hreh="#kontakt">
+            <a onClick={this.closeNav} href="#kontakt">
               Kontakt
             </a>
           </nav>

@@ -1,68 +1,44 @@
 .usluge {
-  // height: 100vh;
-  position: relative;
+  // position: relative;
   z-index: 1;
-  // top: 1010px;
   flex-basis: 100%;
-  padding-top: 100px;
+  padding-top: 5%;
 }
 .usluge--one {
-  // width: 298px;
-  // height: 146px;
   flex-basis: 30%;
   font-family: $Playful;
   font-size: 200px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.8;
   letter-spacing: 6px;
   text-align: left;
   color: white;
   align-self: flex-start;
-  // position: absolute;
-  // left: 70px;
-  // top: 100px;
   padding-left: 5vw;
 }
 
 .usluge--two {
-  // width: 149px;
-  // height: 73px;
   font-family: $Playful;
   font-size: 100px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.8;
   letter-spacing: 3px;
   text-align: left;
   color: white;
-  // position: absolute;
-  // left: 46vw;
-  // top: 400px;
   padding-bottom: 50px;
   align-self: center;
 }
 
 .usluge--three {
-  // width: 517px;
-  // height: 535px;
   flex-basis: 30%;
   font-family: $Playful;
   font-size: 200px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.8;
   letter-spacing: 6px;
   text-align: left;
   color: black;
   padding-top: 250px;
-  // align-self: flex-end;
-  // position: absolute;
-  // left: 1335px;
-  // top: 395px;
 }
 
 .usluge--naslov {
@@ -80,12 +56,12 @@
   // position: absolute;
   // left: 130px;
   // top: 1100px;
-  padding-top: 300px;
+  padding-top: 16%;
   padding-left: 5vw;
 }
 
 .usluge--nav {
-  width: 600px;
+  width: 50%;
   height: 25px;
   margin-left: 7vw;
   padding-top: 80px;
@@ -98,9 +74,6 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: black;
-  // position: absolute;
-  // left: 215px;
-  // top: 1200px;
   list-style-type: none;
   counter-reset: item;
   padding-left: 0px;
@@ -115,8 +88,6 @@
 }
 
 .usluge--naslovtwo {
-  // width: 470px;
-  // height: 195px;
   flex-basis: 30%;
   font-family: $Playful;
   font-size: 30px;
@@ -125,19 +96,13 @@
   font-stretch: normal;
   line-height: 1.38;
   letter-spacing: 1.2px;
-  // text-align: left;
   color: white;
-  // position: absolute;
-  // left: 215px;
-  // top: 2100px;
-  align-self: center;
-  // flex-basis: 30%;
+  align-self: flex-start;
+  padding-top: 25%;
 }
 
 .usluge--podnas {
   width: 500px;
-  // flex-basis: 25%;
-  height: 140px;
   font-family: $Playful;
   font-size: 35px;
   font-weight: 500;
@@ -147,25 +112,18 @@
   letter-spacing: 1.2px;
   text-align: left;
   color: white;
-
-  // position: absolute;
-  // left: 1050px;
-  // top: 1700px;
 }
 
 .usluge--navtwo {
-  width: 700px;
-  padding-top: 100px;
+  width: 40vw;
+  padding-top: 13%;
   font-family: $Playful;
   line-height: 1;
   letter-spacing: 0.6px;
   text-align: left;
   color: white;
-  // position: absolute;
-  // left: 1050px;
-  // top: 2020px;
   & li {
-    padding-bottom: 100px;
+    padding-bottom: 14%;
     font-size: 25px;
     list-style: none;
   }
@@ -180,58 +138,41 @@
 }
 
 #usluge--aktivnosti {
-  // align-self: center;
 }
 
 @media only screen and (max-width: 1366px) {
-  span {
-    .usluge {
-      top: 700px;
+  .usluge {
+  }
+  .usluge--one {
+    font-size: 100px;
+  }
+  .usluge--two {
+  }
+  .usluge--three {
+    width: 300px;
+    font-size: 80px;
+  }
+  .usluge--naslov {
+    font-size: 30px;
+  }
+  .usluge--nav {
+    font-size: 20px;
+  }
+  .usluge--naslovtwo {
+    font-size: 20px;
+    padding-top: 20%;
+  }
+  .usluge--podnas {
+    font-size: 30px;
+  }
+  .usluge--navtwo {
+    min-width: 500px;
+    font-size: 25px;
+    & p {
+      font-size: 18px;
     }
-    .usluge--one {
-      font-size: 100px;
-    }
-    .usluge--two {
-      left: 640px;
-      top: 280px;
-    }
-    .usluge--three {
-      width: 300px;
-      font-size: 80px;
-      left: 80vw;
-      top: 450px;
-    }
-    .usluge--naslov {
-      top: 720px;
-      font-size: 30px;
-    }
-    .usluge--nav {
-      top: 800px;
-      left: 15vw;
+    & li {
       font-size: 20px;
-    }
-    .usluge--naslovtwo {
-      font-size: 25px;
-      left: 15vw;
-      top: 1600px;
-      width: 400px;
-    }
-    .usluge--podnas {
-      font-size: 30px;
-      left: 60vw;
-      top: 1300px;
-    }
-    .usluge--navtwo {
-      min-width: 500px;
-      font-size: 25px;
-      left: 60vw;
-      top: 1500px;
-      & p {
-        font-size: 18px;
-      }
-      & li {
-        font-size: 20px;
-      }
     }
   }
 }
@@ -239,7 +180,6 @@
 @media only screen and (max-width: 1280px) {
   span {
     .usluge {
-      top: 650px;
     }
     .usluge--one {
       width: 200px;
@@ -247,40 +187,27 @@
     }
     .usluge--two {
       font-size: 50px;
-      left: 48.5vw;
-      top: 230px;
     }
     .usluge--three {
       width: 250px;
       font-size: 50px;
-      left: 80vw;
-      top: 400px;
     }
     .usluge--naslov {
       font-size: 25px;
-      left: 20vw;
-      top: 600px;
+      padding-top: 19%;
     }
     .usluge--nav {
       font-size: 20px;
-      top: 750px;
-      left: 10vw;
     }
     .usluge--naslovtwo {
       font-size: 20px;
-      left: 10vw;
-      top: 1500px;
-      width: 350px;
+      min-width: 30vw;
     }
     .usluge--podnas {
       font-size: 25px;
-      left: 55vw;
-      top: 1200px;
     }
     .usluge--navtwo {
       font-size: 20px;
-      left: 55vw;
-      top: 1400px;
     }
   }
 }

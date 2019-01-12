@@ -45,7 +45,6 @@ class Home extends Component {
   render() {
     return (
       <span className="homeStart">
-        <div id="navbar" />
         {this.state.width < 946 ? (
           <TopbarRes
             size={{ width: this.state.width, height: this.state.height }}

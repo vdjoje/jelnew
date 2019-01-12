@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Icon, Image } from "semantic-ui-react";
-import { Element, Link } from "react-scroll";
+// import { Element, Link } from "react-scroll";
 import uon2x from "../../uon2x.png";
 import InlineSVG from "svg-inline-react";
 import { logo } from "../../assets/svg";
@@ -8,11 +8,10 @@ import { logo } from "../../assets/svg";
 const Kontakt = () => {
   return (
     <div className="kontakt">
-      <Element name="kontakt">
-        <p id="kontakt" className="kontakt--naslov">
-          KONTAKT
-        </p>
-      </Element>
+      <p id="kontakt" className="kontakt--naslov">
+        KONTAKT
+      </p>
+
       <div className="kontakt--content">
         <div className="kontakt--ime">
           <p>jelena</p>
@@ -20,11 +19,7 @@ const Kontakt = () => {
         </div>
         <div className="kontakt--info">
           <a href="tel:382-67-254-844">+382 67 / 254 - 844</a>
-          <a
-            // className="kontakt--email"
-            title="My email"
-            href="mailto:arhmiskovic@gmail.com"
-          >
+          <a title="My email" href="mailto:arhmiskovic@gmail.com">
             arhmiskovic@gmail.com
           </a>
           <div className="kontakt--social">
@@ -44,9 +39,9 @@ const Kontakt = () => {
             </Button>
           </div>
         </div>
-        <Link spy={true} smooth={true} duration={500} to="home">
+        <a href="#home">
           <InlineSVG id="kontakt--logo" src={logo} />
-        </Link>
+        </a>
       </div>
       <div className="kontakt--footer">
         <div className="kontakt--copy">Copyright by Jelena Mišković </div>

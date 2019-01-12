@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Button, Icon } from "semantic-ui-react";
-import { Link } from "react-scroll";
 import InlineSVG from "svg-inline-react";
 import { logo, arrowDown } from "../../assets/svg";
 
@@ -38,15 +37,7 @@ export default class Topbar extends Component {
       <header id="navbar">
         <div className="header--container">
           <nav>
-            <Link
-              onClick={this.closeNav}
-              to="usluge"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              Usluge
-            </Link>
+            <a href="#usluge">Usluge</a>
             <a onClick={this.openNav}>
               Portfolio
               <InlineSVG
@@ -55,28 +46,12 @@ export default class Topbar extends Component {
               />
             </a>
           </nav>
-          <Link to="home" spy={true} smooth={true} duration={500}>
+          <a href="#home">
             <InlineSVG className="header--logo" src={logo} />
-          </Link>
+          </a>
           <nav>
-            <Link
-              onClick={this.closeNav}
-              to="omeni"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              O meni
-            </Link>
-            <Link
-              onClick={this.closeNav}
-              to="kontakt"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              Kontakt
-            </Link>
+            <a href="#omeni">O meni</a>
+            <a href="#kontakt">Kontakt</a>
           </nav>
         </div>
         {this.state.submenuVisible ? (
@@ -109,11 +84,7 @@ export default class Topbar extends Component {
               <div id="header--kontakt">
                 <a href="tel:382-67-254-844">+382 67 / 254 - 844</a>
                 <br />
-                <a
-                  // className="kontakt--email"
-                  title="My email"
-                  href="mailto:arhmiskovic@gmail.com"
-                >
+                <a title="My email" href="mailto:arhmiskovic@gmail.com">
                   arhmiskovic@gmail.com
                 </a>
               </div>

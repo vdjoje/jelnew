@@ -6,12 +6,11 @@ const Usluge = () => {
     <div className="usluge">
       <Element name="usluge">
         <div
+          id="usluge"
           style={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between"
-            // alignItems: "center"
-            // flexBases: "1080px"
           }}
         >
           <p className="usluge--one">OD IDEJE</p>

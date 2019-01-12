@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 
 const Omeni = () => {
   return (
-    <div className="omeni">
+    <div id="omeni" className="omeni">
       <Element name="omeni">
         <p className="omeni--naslov">o meni</p>
       </Element>

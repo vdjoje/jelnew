@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Icon } from "semantic-ui-react";
 import InlineSVG from "svg-inline-react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { logo, logoGray, bars, close } from "../../assets/svg";
 
 export default class TopbarRes extends Component {
@@ -32,43 +32,28 @@ export default class TopbarRes extends Component {
   render() {
     return (
       <div className="res">
-        <Link id="res--logo" to="home" spy={true} smooth={true} duration={500}>
+        <a id="res--logo" href="#home">
           <InlineSVG src={logo} />
-        </Link>
-        <Link onClick={this.openMenu} id="res--button">
+        </a>
+        <a onClick={this.openMenu} id="res--button">
           {this.state.resmenuVisible ? (
             <InlineSVG src={close} />
           ) : (
             <InlineSVG src={bars} />
           )}
-        </Link>
+        </a>
         {this.state.resmenuVisible ? (
           <div className="res--menu">
-            <Link
-              onClick={this.closeMenu}
-              to="usluge"
-              smooth={true}
-              duration={500}
-            >
+            <a onClick={this.closeMenu} href="#usluge">
               <a>Usluge</a>
-            </Link>
+            </a>
             <a onClick={this.openNav}>Portfolio</a>
-            <Link
-              onClick={this.closeMenu}
-              to="omeni"
-              smooth={true}
-              duration={500}
-            >
+            <a onClick={this.closeMenu} href="#omeni">
               <a>O meni</a>
-            </Link>
-            <Link
-              onClick={this.closeMenu}
-              to="kontakt"
-              smooth={true}
-              duration={500}
-            >
+            </a>
+            <a onClick={this.closeMenu} href="#kontakt">
               <a>Kontakt</a>
-            </Link>
+            </a>
             <div>
               <Button
                 id="res--social"

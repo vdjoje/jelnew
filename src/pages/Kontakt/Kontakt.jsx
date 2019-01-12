@@ -9,7 +9,9 @@ const Kontakt = () => {
   return (
     <div className="kontakt">
       <Element name="kontakt">
-        <p className="kontakt--naslov">KONTAKT</p>
+        <p id="kontakt" className="kontakt--naslov">
+          KONTAKT
+        </p>
       </Element>
       <div className="kontakt--content">
         <div className="kontakt--ime">

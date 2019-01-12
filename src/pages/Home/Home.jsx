@@ -67,7 +67,7 @@ class Home extends Component {
         >
           <Element name="home">
             <Image id="homeStart--image" src={back} />
-            <div className="homeStart--naslov">
+            <div id="home" className="homeStart--naslov">
               <p>Arhitektura…</p>
               <p>Dizajn…</p>
               <p>Kreacija…</p>

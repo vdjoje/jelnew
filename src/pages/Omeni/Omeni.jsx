@@ -1,12 +1,10 @@
 import React from "react";
-import { Element } from "react-scroll";
 
 const Omeni = () => {
   return (
     <div id="omeni" className="omeni">
-      <Element name="omeni">
-        <p className="omeni--naslov">o meni</p>
-      </Element>
+      <p className="omeni--naslov">o meni</p>
+
       <p className="omeni--one">
         Rođena sam 1986. godine. Diplomirala sam na Arhitektonskom fakultetu u
         Podgorici. Od 2010-te godine se aktivno bavim tom profesijom. Prvobitno

@@ -2,7 +2,7 @@
   // position: relative;
   z-index: 1;
   flex-basis: 100%;
-  // padding-top: 5%;
+  margin-top: 5vh;
   .usluge--down {
     @include flex(row, space-between, center);
     margin-left: 10vw;
@@ -13,8 +13,6 @@
       font-family: $Playful;
       font-size: 30px;
       font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
       line-height: 1.38;
       letter-spacing: 1.2px;
       color: white;
@@ -27,8 +25,6 @@
       font-family: $Playful;
       font-size: 35px;
       font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
       line-height: 1.38;
       letter-spacing: 1.2px;
       text-align: left;
@@ -186,7 +182,7 @@
 
 @media only screen and (max-width: 1280px) {
   .usluge {
-    margin-top: 1.3%;
+    margin-top: 5vh;
     padding-top: 0%;
     height: auto;
     .usluge--down {
@@ -214,7 +210,7 @@
           font-size: 18px;
         }
         & li {
-          font-size: 25px;
+          font-size: 22px;
           padding-bottom: 5%;
         }
       }
@@ -257,151 +253,151 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  span {
-    .usluge {
-      .usluge--one {
-        font-size: 40px;
-        top: 80px;
-      }
-      .usluge--two {
-        font-size: 40px;
-        left: 49vw;
-        top: 200px;
-      }
-      .usluge--three {
-        width: 150px;
-        font-size: 40px;
-        left: 80vw;
-        top: 300px;
-      }
-      .usluge--naslov {
-        font-size: 20px;
-        left: 5vw;
-        top: 650px;
-      }
-      .usluge--nav {
-        font-size: 15px;
-        top: 780px;
-        left: 10vw;
-      }
-      .usluge--naslovtwo {
-        font-size: 15px;
-        left: 10vw;
-        top: 1510px;
-        width: 250px;
-      }
-      .usluge--podnas {
-        width: 350px;
-        font-size: 15px;
-        left: 50vw;
-        top: 1255px;
-      }
-      .usluge--navtwo {
-        left: 50vw;
-        top: 1400px;
-        & p {
-          font-size: 15px;
-        }
-        & li {
-          font-size: 12px;
-          width: 300px;
-        }
-      }
-    }
-  }
-}
+// @media only screen and (max-width: 800px) {
+//   span {
+//     .usluge {
+//       .usluge--one {
+//         font-size: 40px;
+//         top: 80px;
+//       }
+//       .usluge--two {
+//         font-size: 40px;
+//         left: 49vw;
+//         top: 200px;
+//       }
+//       .usluge--three {
+//         width: 150px;
+//         font-size: 40px;
+//         left: 80vw;
+//         top: 300px;
+//       }
+//       .usluge--naslov {
+//         font-size: 20px;
+//         left: 5vw;
+//         top: 650px;
+//       }
+//       .usluge--nav {
+//         font-size: 15px;
+//         top: 780px;
+//         left: 10vw;
+//       }
+//       .usluge--naslovtwo {
+//         font-size: 15px;
+//         left: 10vw;
+//         top: 1510px;
+//         width: 250px;
+//       }
+//       .usluge--podnas {
+//         width: 350px;
+//         font-size: 15px;
+//         left: 50vw;
+//         top: 1255px;
+//       }
+//       .usluge--navtwo {
+//         left: 50vw;
+//         top: 1400px;
+//         & p {
+//           font-size: 15px;
+//         }
+//         & li {
+//           font-size: 12px;
+//           width: 300px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 360px) {
-  span {
-    .usluge {
-      .usluge--one {
-        font-size: 30px;
-        top: -380px;
-        left: 30px;
-        letter-spacing: 1.2px;
-      }
-      .usluge--two {
-        font-size: 30px;
-        left: 42vw;
-        top: -370px;
-        color: white;
-      }
-      .usluge--three {
-        width: 500px;
-        font-size: 30px;
-        left: 25vw;
-        top: -335px;
-        letter-spacing: 1.2px;
-        color: white;
-      }
-      .usluge--naslov {
-        font-size: 16px;
-        left: -194px;
-        top: -220px;
-        z-index: 100;
-      }
-      .usluge--fullnav {
-        position: absolute;
-        top: -222px;
-        width: 360px;
-        height: 350px;
-        .usluge--nav {
-          font-size: 12px;
-          top: 50px;
-          left: 42px;
-        }
-      }
+// @media only screen and (max-width: 360px) {
+//   span {
+//     .usluge {
+//       .usluge--one {
+//         font-size: 30px;
+//         top: -380px;
+//         left: 30px;
+//         letter-spacing: 1.2px;
+//       }
+//       .usluge--two {
+//         font-size: 30px;
+//         left: 42vw;
+//         top: -370px;
+//         color: white;
+//       }
+//       .usluge--three {
+//         width: 500px;
+//         font-size: 30px;
+//         left: 25vw;
+//         top: -335px;
+//         letter-spacing: 1.2px;
+//         color: white;
+//       }
+//       .usluge--naslov {
+//         font-size: 16px;
+//         left: -194px;
+//         top: -220px;
+//         z-index: 100;
+//       }
+//       .usluge--fullnav {
+//         position: absolute;
+//         top: -222px;
+//         width: 360px;
+//         height: 350px;
+//         .usluge--nav {
+//           font-size: 12px;
+//           top: 50px;
+//           left: 42px;
+//         }
+//       }
 
-      .usluge--naslovtwo {
-        font-size: 12px;
-        left: 30px;
-        top: 500px;
-        width: 280px;
-      }
+//       .usluge--naslovtwo {
+//         font-size: 12px;
+//         left: 30px;
+//         top: 500px;
+//         width: 280px;
+//       }
 
-      .usluge--podnas {
-        width: 300px;
-        font-size: 14px;
-        left: 30px;
-        top: 30px;
-      }
-      #usluge--aktivnosti {
-        z-index: -1;
-        position: relative;
-        top: 130px;
-        width: 360px;
-        height: 480px;
-        background-color: black;
-      }
-      .usluge--navtwo {
-        left: 0px;
-        top: 80px;
-        // color: purple;
-        & p {
-          font-size: 12px;
-        }
-        & li {
-          font-size: 11px;
-          width: 260px;
-        }
-      }
-    }
-  }
-}
+//       .usluge--podnas {
+//         width: 300px;
+//         font-size: 14px;
+//         left: 30px;
+//         top: 30px;
+//       }
+//       #usluge--aktivnosti {
+//         z-index: -1;
+//         position: relative;
+//         top: 130px;
+//         width: 360px;
+//         height: 480px;
+//         background-color: black;
+//       }
+//       .usluge--navtwo {
+//         left: 0px;
+//         top: 80px;
+//         // color: purple;
+//         & p {
+//           font-size: 12px;
+//         }
+//         & li {
+//           font-size: 11px;
+//           width: 260px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 320px) {
-  span {
-    .usluge {
-      .usluge--naslovtwo {
-        width: 260px;
-      }
+// @media only screen and (max-width: 320px) {
+//   span {
+//     .usluge {
+//       .usluge--naslovtwo {
+//         width: 260px;
+//       }
 
-      .usluge--podnas {
-      }
-      #usluge--aktivnosti {
-        width: 320px;
-      }
-    }
-  }
-}
+//       .usluge--podnas {
+//       }
+//       #usluge--aktivnosti {
+//         width: 320px;
+//       }
+//     }
+//   }
+// }

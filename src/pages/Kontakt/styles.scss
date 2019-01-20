@@ -1,6 +1,6 @@
 .kontakt {
   z-index: 99;
-  padding-top: 26%;
+  padding-top: 45vh;
   .kontakt--naslov {
     color: black;
     font-family: $Playful;
@@ -124,11 +124,16 @@
 
 @media only screen and (max-width: 1280px) {
   .kontakt {
+    padding-top: 5vh;
     .kontakt--naslov {
     }
     .kontakt--footer {
+      margin-top: 280px;
+      padding: 10px;
+      background: black;
       .kontakt--footLogo {
         .kontakt--devby {
+          color: white;
         }
         #kontakt--uon {
         }
@@ -139,7 +144,7 @@
     .kontakt--content {
       @include flex(row, space-between, center);
       width: 80vw;
-      margin-top: 0px;
+      margin-top: 25vh;
       margin-left: 5vw;
       margin-right: 0vw;
       .kontakt--ime {
@@ -168,6 +173,7 @@
         font-weight: bold;
         line-height: 2;
         text-align: left;
+
         & a {
           color: $gold;
           &:hover {
@@ -213,144 +219,144 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  span {
-    .kontakt {
-      top: 3950px;
-      height: 3000px;
-    }
-    .kontakt--ime {
-      font-size: 25px;
-      top: 300px;
-      left: 5vw;
-    }
-    .kontakt--info {
-      font-size: 18px;
-      top: 200px;
-      left: 35vw;
-    }
-    #kontakt--logo {
-      top: 120px;
-      left: 80vw;
-      svg {
-        width: 80px;
-        height: 80px;
-      }
-    }
+// @media only screen and (max-width: 800px) {
+//   span {
+//     .kontakt {
+//       top: 3950px;
+//       height: 3000px;
+//     }
+//     .kontakt--ime {
+//       font-size: 25px;
+//       top: 300px;
+//       left: 5vw;
+//     }
+//     .kontakt--info {
+//       font-size: 18px;
+//       top: 200px;
+//       left: 35vw;
+//     }
+//     #kontakt--logo {
+//       top: 120px;
+//       left: 80vw;
+//       svg {
+//         width: 80px;
+//         height: 80px;
+//       }
+//     }
 
-    #kontakt--copy {
-      top: 350px;
-    }
-    #kontakt--devby {
-      left: 78vw;
-      top: 320px;
-    }
-    #kontakt--uon {
-      top: 350px;
-      left: 91vw;
-    }
-  }
-}
+//     #kontakt--copy {
+//       top: 350px;
+//     }
+//     #kontakt--devby {
+//       left: 78vw;
+//       top: 320px;
+//     }
+//     #kontakt--uon {
+//       top: 350px;
+//       left: 91vw;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 360px) {
-  span {
-    .kontakt {
-      top: 3300px;
-      left: 12px;
-      height: 250px;
-    }
-    .kontakt--naslov {
-      top: 0px;
-      font-size: 28px;
-    }
-    .kontakt--ime {
-      top: -150px;
-      left: 21px;
-      @include flex(column, left, top);
-      & p {
-        font-size: 20px;
-      }
-    }
-    .kontakt--info {
-      font-size: 12px;
-      top: -130px;
-      left: 21px;
-    }
-    #kontakt--face {
-      top: 46px;
-      left: 220px;
-      transform: scale(0.5, 0.5);
-    }
-    #kontakt--insta {
-      top: 46px;
-      left: 260px;
-      transform: scale(0.5, 0.5);
-    }
-    #kontakt--logo {
-      top: -305px;
-      left: 235px;
-    }
-    #kontakt--footer {
-      width: 360px;
-      height: 30px;
-      top: -150px;
-      left: -12px;
-      position: relative;
-      background: black;
-    }
-    #kontakt--copy {
-      top: 5px;
-      font-size: 9px;
-    }
-    #kontakt--devby {
-      left: 265px;
-      top: -22px;
-      font-size: 9px;
-      color: white;
-    }
-    #kontakt--uon {
-      top: 4px;
-      left: 310px;
-      transform: scale(0.5, 0.5);
-    }
-  }
-}
+// @media only screen and (max-width: 360px) {
+//   span {
+//     .kontakt {
+//       top: 3300px;
+//       left: 12px;
+//       height: 250px;
+//     }
+//     .kontakt--naslov {
+//       top: 0px;
+//       font-size: 28px;
+//     }
+//     .kontakt--ime {
+//       top: -150px;
+//       left: 21px;
+//       @include flex(column, left, top);
+//       & p {
+//         font-size: 20px;
+//       }
+//     }
+//     .kontakt--info {
+//       font-size: 12px;
+//       top: -130px;
+//       left: 21px;
+//     }
+//     #kontakt--face {
+//       top: 46px;
+//       left: 220px;
+//       transform: scale(0.5, 0.5);
+//     }
+//     #kontakt--insta {
+//       top: 46px;
+//       left: 260px;
+//       transform: scale(0.5, 0.5);
+//     }
+//     #kontakt--logo {
+//       top: -305px;
+//       left: 235px;
+//     }
+//     #kontakt--footer {
+//       width: 360px;
+//       height: 30px;
+//       top: -150px;
+//       left: -12px;
+//       position: relative;
+//       background: black;
+//     }
+//     #kontakt--copy {
+//       top: 5px;
+//       font-size: 9px;
+//     }
+//     #kontakt--devby {
+//       left: 265px;
+//       top: -22px;
+//       font-size: 9px;
+//       color: white;
+//     }
+//     #kontakt--uon {
+//       top: 4px;
+//       left: 310px;
+//       transform: scale(0.5, 0.5);
+//     }
+//   }
+// }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+// /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
-/* Portrait */
-@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  span {
-    .kontakt--naslov {
-      top: -20px;
-      font-size: 28px;
-    }
+// /* Portrait */
+// @media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+//   span {
+//     .kontakt--naslov {
+//       top: -20px;
+//       font-size: 28px;
+//     }
 
-    #kontakt--face {
-      left: 210px;
-    }
-    #kontakt--insta {
-      left: 240px;
-    }
-    #kontakt--logo {
-      left: 225px;
-      svg {
-        transform: scale(0.7, 0.7);
-      }
-    }
-    #kontakt--footer {
-      width: 100vw;
-    }
+//     #kontakt--face {
+//       left: 210px;
+//     }
+//     #kontakt--insta {
+//       left: 240px;
+//     }
+//     #kontakt--logo {
+//       left: 225px;
+//       svg {
+//         transform: scale(0.7, 0.7);
+//       }
+//     }
+//     #kontakt--footer {
+//       width: 100vw;
+//     }
 
-    #kontakt--devby {
-      left: 225px;
-    }
-    #kontakt--uon {
-      left: 270px;
-    }
-  }
-}
+//     #kontakt--devby {
+//       left: 225px;
+//     }
+//     #kontakt--uon {
+//       left: 270px;
+//     }
+//   }
+// }
 
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-}
+// /* Landscape */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+// }

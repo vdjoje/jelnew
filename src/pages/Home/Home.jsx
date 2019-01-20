@@ -9,7 +9,6 @@ import Usluge from "../Usluge";
 import PortfolioHome from "../PortfolioHome";
 import Omeni from "../Omeni";
 import Kontakt from "../Kontakt";
-import { Element } from "react-scroll";
 
 class Home extends Component {
   constructor() {
@@ -56,29 +55,23 @@ class Home extends Component {
         )}
 
         <TriangleBack />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-beetwen",
-            alignItems: "flex-start"
-          }}
-        >
-          <Element name="home">
-            <Image id="homeStart--image" src={back} />
-            <div id="home" className="homeStart--naslov">
-              <p>Arhitektura…</p>
-              <p>Dizajn…</p>
-              <p>Kreacija…</p>
-              <p> Umjetnost…</p>
-              <p> Enterijer…</p>
-              <h3>“An interior is the Natural projection of the soul”</h3>
-              <h5>(Coco Chanel)</h5>
-            </div>
-          </Element>
+        <div className="homeStart--content">
+          <Image id="homeStart--image" src={back} />
+          <div id="home" className="homeStart--naslov">
+            <p>Arhitektura…</p>
+            <p>Dizajn…</p>
+            <p>Kreacija…</p>
+            <p> Umjetnost…</p>
+            <p> Enterijer…</p>
+            <h3>“An interior is the Natural projection of the soul”</h3>
+            <h5>(Coco Chanel)</h5>
+          </div>
+
           <Usluge />
           <PortfolioHome />
-          <Image id="homeStart--small" src={backSmall} />
+          <div style={{ width: "100vw" }}>
+            <Image id="homeStart--small" src={backSmall} />
+          </div>
           <Omeni />
           <Kontakt />
         </div>

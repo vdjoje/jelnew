@@ -192,45 +192,32 @@ span {
         border-right: 1280px solid transparent;
       }
       .backDiv--lt {
-        border-top: 710px solid black;
-        border-right: 1280px solid transparent;
+        display: none;
       }
       .backDiv--ltgold {
-        border-top: 760px solid $gold;
-        border-right: 1280px solid transparent;
+        display: none;
       }
       .backDiv--rb {
-        border-bottom: 710px solid black;
-        border-left: 1280px solid transparent;
+        display: none;
       }
       .backDiv--rbgold {
-        border-bottom: 760px solid $gold;
-        border-left: 1280px solid transparent;
+        display: none;
       }
       .backDiv--rt {
-        border-top: 710px solid black;
-        border-left: 1280px solid transparent;
+        display: none;
       }
       .backDiv--rtgold {
-        border-top: 760px solid $gold;
-        border-left: 1280px solid transparent;
+        display: none;
       }
       .backDiv--para {
-        width: 1280px;
-        height: 1685px;
+        display: none;
       }
       .backDiv--paragold {
-        width: 1280px;
-        height: 1700px;
+        display: none;
       }
     }
     .lastDiv {
-      .lastDiv--last {
-        top: 476px;
-      }
-      .lastDiv--lastgold {
-        top: 446px;
-      }
+      display: none;
     }
   }
 }
@@ -253,34 +240,6 @@ span {
       .backDiv--lt {
         border-top: 710px solid black;
         border-right: 800px solid transparent;
-      }
-      .backDiv--ltgold {
-        border-top: 760px solid $gold;
-        border-right: 800px solid transparent;
-      }
-      .backDiv--rb {
-        border-bottom: 710px solid black;
-        border-left: 800px solid transparent;
-      }
-      .backDiv--rbgold {
-        border-bottom: 760px solid $gold;
-        border-left: 800px solid transparent;
-      }
-      .backDiv--rt {
-        border-top: 710px solid black;
-        border-left: 800px solid transparent;
-      }
-      .backDiv--rtgold {
-        border-top: 760px solid $gold;
-        border-left: 800px solid transparent;
-      }
-      .backDiv--para {
-        width: 800px;
-        height: 1200px;
-      }
-      .backDiv--paragold {
-        width: 800px;
-        height: 1210px;
       }
     }
   }

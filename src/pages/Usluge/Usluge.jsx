@@ -1,23 +1,21 @@
 import React from "react";
-import { Element } from "react-scroll";
 
 const Usluge = () => {
   return (
     <div className="usluge">
-      <Element name="usluge">
-        <div
-          id="usluge"
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between"
-          }}
-        >
-          <p className="usluge--one">OD IDEJE</p>
-          <p className="usluge--two">DO</p>
-          <p className="usluge--three">REA LIZA CIJE</p>
-        </div>
-      </Element>
+      <div
+        id="usluge"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between"
+        }}
+      >
+        <p className="usluge--one">OD IDEJE</p>
+        <p className="usluge--two">DO</p>
+        <p className="usluge--three">REA LIZA CIJE</p>
+      </div>
+
       <p className="usluge--naslov">Mogu Vam pomoći sa izradom</p>
       <div className="usluge--fullnav">
         <ul className="usluge--nav">
@@ -38,22 +36,12 @@ const Usluge = () => {
           <li>Kordinacija prilikom izrade projekata</li>
         </ul>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          marginLeft: "10vw",
-
-          width: "80vw",
-          marginTop: "510px"
-        }}
-      >
+      <div className="usluge--down">
         <p className="usluge--naslovtwo">
           Svi projekti se u potpunosti izrađuju po važećim propisima i zakonima
           i pokriveni su validnom licencom.
         </p>
-        <div id="usluge--aktivnosti">
+        <div className="usluge--aktivnosti">
           <p className="usluge--podnas">
             Aktivnosti prilikom ugovaranja obuhvataju nekoliko faza:
           </p>
@@ -68,6 +56,10 @@ const Usluge = () => {
             </li>
           </ul>
         </div>
+        <p className="usluge--tst">
+          Svi projekti se u potpunosti izrađuju po važećim propisima i zakonima
+          i pokriveni su validnom licencom.
+        </p>
       </div>
     </div>
   );

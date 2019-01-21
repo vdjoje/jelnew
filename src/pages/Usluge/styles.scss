@@ -371,18 +371,62 @@
   }
 }
 
-// @media only screen and (max-width: 320px) {
-//   span {
-//     .usluge {
-//       .usluge--naslovtwo {
-//         width: 260px;
-//       }
+@media only screen and (max-width: 320px) {
+  .usluge {
+    width: 100vw;
+    margin-top: 0px;
+    border-top: 2px solid $gold;
 
-//       .usluge--podnas {
-//       }
-//       #usluge--aktivnosti {
-//         width: 320px;
-//       }
-//     }
-//   }
-// }
+    #usluge {
+    }
+    .usluge--down {
+      margin-top: 300px;
+      .usluge--naslovtwo {
+        font-size: 20px;
+      }
+      .usluge--podnas {
+        @include flex(row, center, center);
+        font-size: 18px;
+
+        width: 90vw;
+        align-self: center;
+        margin-left: 35vw;
+      }
+      .usluge--navtwo {
+        & p {
+          font-size: 10px !important;
+          width: 90vw;
+        }
+        & li {
+          font-size: 10px;
+          width: 90vw;
+          margin-left: 25vw;
+        }
+      }
+      .usluge--tst {
+        font-size: 15px;
+        padding-bottom: 5vh;
+      }
+    }
+  }
+  .usluge--one {
+    font-size: 30px !important;
+  }
+  .usluge--two {
+    font-size: 30px !important;
+  }
+  .usluge--three {
+    font-size: 30px !important;
+  }
+  .usluge--naslov {
+    font-size: 20px !important;
+    width: 100vw;
+  }
+  .usluge--fullnav {
+    ul {
+      li {
+        font-size: 13px !important;
+      }
+    }
+  }
+}

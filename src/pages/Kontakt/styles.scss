@@ -13,7 +13,7 @@
   }
   .kontakt--footer {
     width: 100vw;
-    margin-top: 300px;
+    margin-top: 280px;
     @include flex(row, space-between, center);
 
     .kontakt--footLogo {
@@ -295,6 +295,7 @@
     }
     .kontakt--content {
       @include flex(column, center, center);
+      margin-top: 15vh;
       .kontakt--ime {
         @include flex(column, center, center);
         & p {

@@ -127,6 +127,23 @@
   }
 }
 
+@media only screen and (max-width: 320px) {
+  span {
+    .homeStart--naslov {
+      p {
+      }
+      & h3,
+      h5 {
+      }
+    }
+    #homeStart--image {
+      height: 220px;
+    }
+    #homeStart--small {
+    }
+  }
+}
+
 // /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 // /* Portrait */

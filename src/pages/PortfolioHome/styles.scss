@@ -50,6 +50,8 @@ span {
   span {
     .portfolioHome {
       // top: 2780px;
+      width: 1366px;
+      align-self: center;
     }
   }
 }
@@ -57,6 +59,7 @@ span {
 @media only screen and (max-width: 1280px) {
   span {
     .portfolioHome {
+      max-width: 1280px;
       height: 600px;
       top: 2700px;
       .portfolioHome--card {
@@ -78,7 +81,7 @@ span {
   span {
     .portfolioHome {
       height: 500px;
-      top: 200vh;
+      max-width: 800px;
     }
   }
 }

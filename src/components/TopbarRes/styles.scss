@@ -1,10 +1,11 @@
 .res {
   position: absolute;
+  left: 0px;
   width: 100vw;
   height: 40px;
   background: black;
   color: white;
-  position: fixed;
+  // position: fixed;
   z-index: 100;
   @include flex(row, center, center);
   .res--menu {

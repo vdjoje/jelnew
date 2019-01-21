@@ -77,8 +77,8 @@ span {
 @media only screen and (max-width: 800px) {
   span {
     .portfolioHome {
-      height: 800px;
-      top: 2550px;
+      height: 500px;
+      top: 200vh;
     }
   }
 }
@@ -86,6 +86,7 @@ span {
 @media only screen and (max-width: 360px) {
   span {
     .portfolioHome {
+      display: none !important;
       @include flex(column, space-between, center);
       height: 1010px;
       top: 1260px;

@@ -223,83 +223,43 @@ span {
   }
 }
 
-// @media only screen and (max-width: 800px) {
-//   span {
-//     .line {
-//       width: 800px;
-//     }
-//     .backDiv {
-//       .backDiv--lbgold {
-//         border-bottom: 800px solid $gold;
-//         border-right: 800px solid transparent;
-//         top: -90px;
-//       }
-//       .backDiv--lb {
-//         border-bottom: 710px solid black;
-//         border-right: 800px solid transparent;
-//       }
-//       .backDiv--lt {
-//         border-top: 710px solid black;
-//         border-right: 800px solid transparent;
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 800px) {
+  span {
+    .line {
+      width: 800px;
+    }
+    .backDiv {
+      .backDiv--lbgold {
+        // border-bottom: 800px solid $gold;
+        border-right: 100vw solid transparent;
+        top: -90px;
+      }
+      .backDiv--lb {
+        // border-bottom: 710px solid black;
+        border-right: 800px solid transparent;
+      }
+    }
+  }
+}
 
-// @media only screen and (max-width: 360px) {
-//   span {
-//     .line {
-//       width: 360px;
-//     }
-//     .backDiv {
-//       .backDiv--lbgold {
-//         border-bottom: 240px solid $gold;
-//         border-right: 360px solid transparent;
-//         top: 0px;
-//       }
-//       .backDiv--lb {
-//         margin-top: 40px;
-//         border-bottom: 200px solid black;
-//         border-right: 360px solid transparent;
-//       }
-//       .backDiv--lt {
-//         width: 360px;
-//         height: 185px;
-//         background-color: black;
-//         border: 0px;
-//       }
-//       .backDiv--ltgold {
-//         display: none;
-//       }
-//       .backDiv--rb {
-//         display: none;
-//       }
-//       .backDiv--rbgold {
-//         display: none;
-//       }
-//       .backDiv--rt {
-//         display: none;
-//       }
-//       .backDiv--rtgold {
-//         display: none;
-//       }
-//       .backDiv--para {
-//         display: none;
-//       }
-//       .backDiv--paragold {
-//         display: none;
-//       }
-//     }
-//     .lastDiv {
-//       .lastDiv--last {
-//         display: none;
-//       }
-//       .lastDiv--lastgold {
-//         display: none;
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 360px) {
+  span {
+    .line {
+      width: 360px !important;
+      display: none;
+    }
+    .backDiv {
+      .backDiv--lbgold {
+        // border-right: 360px solid transparent;
+        display: none;
+      }
+      .backDiv--lb {
+        // border-right: 360px solid transparent;
+        display: none;
+      }
+    }
+  }
+}
 
 // /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 

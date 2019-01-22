@@ -11,7 +11,7 @@
     width: 80vw;
     margin-top: 510px;
     .usluge--naslovtwo {
-      flex-basis: 30%;
+      flex-basis: 35%;
       font-family: $Playful;
       font-size: 30px;
       font-weight: bold;
@@ -145,6 +145,16 @@
 
 @media only screen and (max-width: 1366px) {
   .usluge {
+    .usluge--one {
+      font-size: 100px;
+    }
+    .usluge--two {
+      margin-top: 0px;
+    }
+    .usluge--three {
+      max-width: 200px;
+      font-size: 80px;
+    }
     .usluge--down {
       .usluge--naslovtwo {
         font-size: 20px;
@@ -165,26 +175,22 @@
       }
     }
   }
-  .usluge--one {
-    font-size: 100px;
-  }
-  .usluge--two {
-  }
-  .usluge--three {
-    width: 300px;
-    font-size: 80px;
-  }
+
   .usluge--naslov {
     font-size: 30px;
   }
   .usluge--fullnav {
-    font-size: 20px;
+    .usluge--nav {
+      li {
+        font-size: 20px;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .usluge {
-    margin-top: 5vh;
+    margin-top: 0vh;
     padding-top: 0%;
     height: auto;
     .usluge--down {
@@ -305,6 +311,67 @@
           font-size: 12px;
           // width: 300px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .usluge {
+    width: 100vw;
+    margin-top: 0px;
+    border-top: 2px solid $gold;
+
+    #usluge {
+    }
+    .usluge--down {
+      margin-top: 300px;
+      .usluge--naslovtwo {
+        font-size: 20px;
+      }
+      .usluge--podnas {
+        @include flex(row, center, center);
+        font-size: 20px;
+
+        width: 90vw;
+        align-self: center;
+        margin-left: 25vw;
+      }
+      .usluge--navtwo {
+        & p {
+          font-size: 10px !important;
+          width: 90vw;
+        }
+        & li {
+          font-size: 10px;
+          width: 90vw;
+          margin-left: 18vw;
+        }
+      }
+      .usluge--tst {
+        font-size: 15px;
+        padding-bottom: 5vh;
+      }
+    }
+  }
+  .usluge--one {
+    font-size: 30px !important;
+  }
+  .usluge--two {
+    font-size: 30px !important;
+  }
+  .usluge--three {
+    font-size: 30px !important;
+  }
+  .usluge--naslov {
+    font-size: 20px !important;
+    width: 100vw;
+  }
+  .usluge--fullnav {
+    ul {
+      li {
+        font-size: 15px !important;
+        width: 90vw;
       }
     }
   }

@@ -8,7 +8,10 @@ const Usluge = () => {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between"
+          justifyContent: "space-between",
+          width: "100vw",
+
+          paddingRight: "5vw"
         }}
       >
         <p className="usluge--one">OD IDEJE</p>
